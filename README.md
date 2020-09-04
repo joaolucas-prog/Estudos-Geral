@@ -1,2 +1,2 @@
 # Estudos-Geral
-##Este repositório contém meus estudos diversos de tecnologias
+## Este repositório contém meus estudos diversos de tecnologias

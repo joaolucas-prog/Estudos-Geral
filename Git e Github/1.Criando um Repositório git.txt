@@ -1,0 +1,27 @@
+    O git é um sistema de controle de versionamento de projetos
+
+    para utiliza-lo você deve instala-lo , a instalação é padrão next next.
+
+    Com o git instalado você pode abrir seu prompt de comando chamado git Bash , 
+    para iniciar um projeto com o git você deve está dentro da pasta do projeto em que
+    você quer fazer um controle de versionamento . Com isso feito basta digitar no prompt
+    "git init" com isso você cria um repositório , um novo arquivo oculto .git será criado
+    na sua pasta e você ja pode gerenciar seu projeto .
+
+    Vamos fazer algumas configurações iniciais digite :
+    "git config --global user.name "nome do usuario"
+    "git config --global user.email "email do usuario"
+
+
+    para visualizar o estado atual do seu repositório digite o comando : "git status"
+    Ele mostrará algumas informações sobre seu projeto como :
+    - qual branch você está 
+    - se foi realizado algum commit
+    - quais arquivos estão Untracked ou mudaças para ser committed
+    
+    Para colocar um arquivo para monitorar digitamos o comando : 
+    "git add <nome_do_arquivo>" ou 
+    "git add ." este segundo comando adiciona todos os arquivos que foram modificados para monitoramento
+
+    Para salvar as alterações feitas no arquivo digitamos :
+    "git commit -m 'uma mensagem descritiva da modificação'"

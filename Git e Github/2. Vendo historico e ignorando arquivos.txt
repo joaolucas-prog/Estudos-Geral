@@ -1,0 +1,18 @@
+Como olhar o histórico de alteração ?
+
+Isso é bastante simples basta digitar o comando "git log".
+
+Com isso deve aparecer todas as modificações feitas no repositório 
+ -hash de cada commit realizado jutamente qual branch foi modificado
+ -o author
+ -a data
+ - a mensagem
+
+Para fazer que o git ignore alguns arquivos temos que criar um arquivo com nome .gitignore
+e dentro deste arquivo colocar linha a linha o nome de cada arquivo que deseja ser ignorado
+caso seja uma pasta nome_da_pasta/
+
+Agora quando fazer um commit ? Depende , cada pessoa defende uma linha de pensamento
+porém recomendo fazer a cada ajuste significativo , ou no fim do dia .  Além disso
+nunca deve fazer um commit com um códugo que não funciona!!!!
+

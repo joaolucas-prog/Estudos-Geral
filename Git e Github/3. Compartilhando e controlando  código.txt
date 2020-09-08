@@ -1,0 +1,34 @@
+Podemos criar um repositorio dentro de uma pasta servidor que vai servir como um repositorio para guardar
+as alterações feitas , porém ela não irá salvar copias físicas do código para isso crie uma pasta chamada
+servidor e dentro dela abra seu git bash e digite "git init --bare"  isso garante a condição acima.
+
+Como fazer meu repositorio reconhecer esse novo repositorio criado ? basta digitar :
+"git remote add nome_repositorio <endereço do novo repositorio>" isso funciona tanto como um diretorio local , 
+um diretorio na rede , um link de um servidor etc .E o nome_repositorio pode ser qualquer nome que você der ao
+repositorio
+
+Para trazer todos os dados do repositorio remoto para o repositorio local , temos que digitar 
+"git clone <endereço do repositorio remoto>". ou "git clone <endereço do repositorio remoto> nome_do_projeto".
+
+Para enviar ou empurrar o meu repositorio para o repositorio devo digitar : "git push repositorio_remoto master" 
+isso significa que estou enviando as alterações da minha branch master para o repositorio_remoto .
+
+Para pegar os dados do repositorio_remoto digitamos "git pull origin master" .Com isso você pega os dados
+do repositorio_remoto e coloca no seu repositorio local , caso queira mudar esse nome origin basta digitar 
+"git remote rename origin novo_nome"
+
+Utilizando o git hub:
+Você deve criar uma conta no github pois ele é um repositorio na internet e grátis , oque facilida muito a vida .
+
+la você tem a opção de criar um novo repositorio , mas se preferir digirar  na linha de comando basta digitar:
+"git init"
+"git add READM.md"
+"git commit -m 'first commit'"
+"git remote add origin <link ssh no github ou https>"
+"git push -u origin master" // esse -u significa que não preciso nas proximas vezes escrever a origin e destino
+                            // porem recomendo usar "git push origin master"
+
+
+ou se você quiser empurrar um repositorio existente na linha de comando :
+"git remote add origin <link SSH ou HTTPS>
+"git push -u origin master" // novamente recomendo "git push origin master"

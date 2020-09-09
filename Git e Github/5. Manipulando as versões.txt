@@ -1,0 +1,35 @@
+Como fazer para desfazer uma alteração no código , basta digitar :
+"git checkout -- <nome_do_arquivo>" porém só funciona antes de adicionar para o commit ,
+
+Como fazer para desfazer uma alteração no código que já foi adicinado antes do commit :
+"git reset HEAD <nome_do_arquivo>" o HEAD é o estado atual do projeto
+"git checkout -- <nome_do_arquivo>"
+
+E agora no pior dos casos? como desfazer uma alteração no código ja commitado:
+"git log" você deve copiar o hash do commit anterior e escrever
+"git revert <hash_do_commmit_desejado>
+
+Como faço para "guardar um código para usar depois" , por exemplo você está trabalhando no HEAD
+do site porem seu chefe mandou você olhar outra coisa  , só que você ainda não testou aquele código
+como guardar aquele código sem precisar adicionar e comitar ? Basta digitar 
+"git stash"
+isso guardará seu código para poder user depois , para saber a lista de stash basta digitar :
+"git stash list"
+
+E como recuperar aquele código que ficou guardado ? existe 2 formas :
+"git stash apply <numero_da_stash>" só que ainda ficara na lista você terá que remover com 
+"git stash drop"
+
+ou 
+"git stash pop" que pega a ultima stash e ja remove
+
+Como "viajar no tempo" , como voltar para um estado antigo do código?
+
+como deve pegar o começo do hash do estado para qual você quer voltar usando o comando
+"git log --oneline"
+vai aparecer um log simplificado com os hashs reduzidos ai basta digitar 
+"git checkout <hash_reduzido_desejado>"
+e a maquina estará apontando para aquele estado , porém ele não está preso a nada 
+caso você faça um commit e dê um chekout para master você perderá aquele commit
+E como resolver isso ? Simples , criando uma nova branch
+"git checkout -b <nova_branch>"

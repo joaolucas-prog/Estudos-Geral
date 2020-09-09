@@ -1,0 +1,11 @@
+Como fazer para vê as alterações no git?
+basta digitar:
+"git diff <hash_reduzido_estado1>..<hash_reduzido_estado2>" esse .. sigificam "até"
+ou 
+"git diff" para vê as alterações do seu arquivo antes de ser adicionado.
+
+como criar uma release/versão / tag no git . Essa tag significa que este ponto não será mais editado
+ou seja todas as novas modificações fazem parte de uma nova versão , para criar uma tag digite:
+"git tag -a <nome_tag> -m 'mensagem com descrição da versão1'"
+
+podendo também a tag ser enviada além da master para seu repositório.

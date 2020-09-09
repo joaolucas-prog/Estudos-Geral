@@ -1,0 +1,24 @@
+Branch são ramifiações do nosso projeto em que faz uma cópia do original porém toda as 
+modificações ficam nessa branch sem prejudicar a branch master que é a principal
+
+Para criar novas branch devemos digitar :
+"git branch <nome_da_branch>"
+
+Para vefiricar todas as branchs digitamos:
+"git branch"
+
+Para trocar de branch digite:
+"git checkout <nome_da_branch_desejada>"
+
+Esse comando cria um branch e ja muda para ela:
+"git checkout -b <nome_da_branch>"
+
+Para juntar as modificações em branchs diversas devemos trocar para a branch principal e digitar:
+"git merge <nome_da_branch>"
+
+Porém os commits que estão nas branchs diversas vão ser perdidas , para 
+atualizar a master sem perder os commit devemos digita :
+"git rebase <nome_da_branch>
+
+DICA : sempre antes de começar a trabalhar ou antes de fazer um push você deve fazer umm
+pull da master para atualizar seu projeto .

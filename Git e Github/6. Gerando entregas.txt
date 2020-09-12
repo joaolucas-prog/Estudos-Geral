@@ -9,4 +9,3 @@ ou seja todas as novas modificações fazem parte de uma nova versão , para cri
 "git tag -a <nome_tag> -m 'mensagem com descrição da versão1'"
 
 podendo também a tag ser enviada além da master para seu repositório.
-Testando o log 

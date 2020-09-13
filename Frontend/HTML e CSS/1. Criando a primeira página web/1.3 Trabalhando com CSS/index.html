@@ -2,23 +2,60 @@
     Agora iremos utilizar um pouco do CSS que significa folha de estilo em cascata 
     iremos usar uma propriedade em cada tag chamada style, e nela iremos fazer as
     modificações para a apresentação do nosso site
+
+    existem 3 formas de aplicarmos o css na nossa página:
+     
+    1.inline,ou seja, na linha EX: <h1 style=""></h1> dentro do style , você deve escolher o estilo que vai usar
+
+    2.podemos criar uma tag no head do html <style></style> e dentro dela passar os estilos
+    ex: 
+        <style>
+            p {
+                text-align: center
+            }
+        </style>
+
+    3. ou criamos um arquivo externo chamado style.css e chamamos ele com a tag link, esse é o mais recomendado.
+    EX:
+    <link rel="stylesheet" href="style.css"> e escrever o contéudo do estilo dentro  do arquivo css
+
+
+        Alguns estilos css 
+        
+        -text-align : center significa o alinhamento do texto e como quero ele no centro coloquei center
+        -font-size : 20px é o tamanho da font e o escolhido foi 20px
+        -background : #CCCCCC background é a cor do fundo do elemento
+        -color : #FF0000 a cor do elemento
+
+    oque siginifica esse p { ... } ? O html entende que todas as tag p seráo estilizadas com os estilos
+    colocados entre as chaves
+
+    Você pode também colocar essas caracteristicas para "estruturas"
+    EX :
+    em strong{
+         color: red;
+     }
+
+     o HTML vai buscar todas as tag <strong> que estiver dentro da tag <em>
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Barbearia Estudo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center">Sobre a Barbearia Estudo</h1><!--
-        text-align significa o alinhamento do texto e como quero ele no centro coloquei center
-    -->
+    <h1 style="text-align: center">Sobre a Barbearia Estudo</h1>
     <p style="text-align: center">Localizada no coração da cidade a <strong>Barbearia Estudo</strong> traz para o mercado o que há 
     de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Estudo</strong> já é destaque na 
     cidade e conquista novos clientes a cada dia.</p>
 
     <p style="text-align: center"><em>Nossa missão é: <strong style="font-size: 20px">"Proporcionar auto-estima e qualidade de vida aos clientes"</strong></em>.</p>
-                                                        <!-- font-size é o tamanho da font e o escolhido foi 20px-->
+
     <p style="text-align: center">Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
     O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
     satisfação dos nossos clientes.</p>   

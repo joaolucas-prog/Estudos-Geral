@@ -1,0 +1,17 @@
+Issues são sugestões, feedbacks , perguntas sobre um código open source . Você pode fazer uma issue em qualquer código
+seja ele de seu domínio ou não.
+
+Porém eu não posso sair alterando o código alheio , para sugerir alguma mudança ou correção de bugs etc..,
+temos que fazer um Fork do projeto que deseja fazer uma modificação . Um Fork é uma cópia do repositório
+ou projeto no seu git nela você pode fazer todas as suas alterações e depois enviar sua contribuição.
+
+Para enviar sua modificação você deve criar um Pull Request , e o "dono" do projeto irá avaliar seu código
+podendo fazer um merge do seu código ou não.
+
+Como juntar os commits em apenas um :
+"git rebase -i <hash>"
+
+irá abrir uma janela das litas do commit 
+o pick  significa se você vai juntar ou não com o commit anterior , para isso você substitui o 
+pick por s deixando apenas o primeiro commit com pick , depois escrever ":x" para salvar
+e em seguida digitar uma nova mensagem

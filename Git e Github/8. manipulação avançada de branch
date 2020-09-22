@@ -1,0 +1,37 @@
+Pegando um commit especifico :
+
+Pense em uma situação que você precisa apegar um commit especifico de outras branch que ainda não estão
+"prontas" e coloca-la na master para evitar ter que repetir o mesmo código em outro commit.
+Você pode pegar um commit especifico de sua linha de produção com o comando :
+"git cherry-pick <hash_commit>"
+
+Caso essa branch termine seu trabalho e depois escreva um rebase , o git levará apenas os commits que ficaram 
+faltando sem repetição de commits.
+
+Procurando um commit com o bisect (bom para busca de bugs):
+inicie o bisect com o comando 
+    "git bisect start"
+
+em seguida você deve dizer um estado do código em que o commit não está legal ex:
+    "git bisect bad HEAD"
+
+e depois dizer um estado que você acha que está legal aquela parte do código ex:
+    "git bisect good <hash_commit>"
+
+ai ele vai ficar mostrando as revisões de estados caso você esteja no estado que não quer digite:
+    "git bisect bad"
+
+se tiver OK:
+    "git bisect good"
+
+faça isso até chegar no local que você deseja e ao encontrar o commit digite o comando para sair :
+    "git bisect reset"
+e ele mostrará o hash para vê as alterações feitas digite :
+    "git show <hash_encontrado>
+para voltar para aquele estado digite 
+    "git revert <hash_encontrado>" 
+caso haja conflito , corrija e commite a alteração.
+
+
+Como encontrar os responsável pelas linhas de código digite :
+    "git blame <nome_arquivo>"

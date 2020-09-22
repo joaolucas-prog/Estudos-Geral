@@ -1,0 +1,57 @@
+<!--
+   Como faço para marcar uma tag e atribuir elementos do css apenas a ela ?
+   Para isso temos que escrever um identificador na tag chamada id="nomeid" e no css 
+   chamalo com o nome #nomeid
+
+   Para colocar uma imagem no html devemos escrever a tag:
+   <img src="nome_imagem" > src significa source e é onde o html irá procurar a imagem
+
+   Como visualizar as dimensões do elemento no html ?
+   recomendo utilizar a ferramenta do desenvolvedor pois ele mostra em tempo real essas modificações
+   e colocar uma borda no elemento para visualizar as mudanças pode ser essa "border :10px solid #000000"
+   
+   Temos 4 dimensões de um elemento no html 
+    - altura :
+        height : 20px ou 100%;
+    na altura você pode escolher valores e pixels ou em porcentagem, os valores que estão são só exemplos
+    - comprimento:
+        width : 20px ou  100%
+    
+    - espaçamento interno:
+        o espaçamento interno pode ser de todos os lados ou algum lado especifico
+        padding : 20px (todos os lados)
+        padding-top: 20px (a parte de cima)
+        padding-bottom: 20px ( a parte de baixo)
+        padding-left : 20px (o lado esquerdo)
+        padding-right : 20px (o lado direito)
+        ...
+    - espaçamento externo
+        igual o interdo pode ser alterado de todos os lados ou algum especifico
+        margin : 20px (todos os lados)
+        margin-top: 20px (a parte de cima)
+        margin-bottom: 20px ( a parte de baixo)
+        margin-left : 20px (o lado esquerdo)
+        margin-right : 20px (o lado direito)
+        ...
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Estudo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img id = "banner" src="./banner.jpg">
+    <h1>Sobre a Barbearia Estudo</h1>
+    <p>Localizada no coração da cidade a <strong>Barbearia Estudo</strong> traz para o mercado o que há 
+    de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Estudo</strong> já é destaque na 
+    cidade e conquista novos clientes a cada dia.</p>
+
+    <p id ="missao" ><em>Nossa missão é: <strong >"Proporcionar auto-estima e qualidade de vida aos clientes"</strong></em>.</p>
+
+    <p >Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
+    O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
+    satisfação dos nossos clientes.</p>   
+</body>
+</html>

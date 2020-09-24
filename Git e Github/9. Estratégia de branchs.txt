@@ -1,0 +1,20 @@
+Excluindo uma branch :
+    "git branch -d <nome_branch>"
+    caso o branch que você deseja deletar esteja na frente da branch master vc utiliza o D 
+    "git branch -D <nome_branch>
+
+padrão git flow
+    No padrão git flow a brach master só serve para receber os commits prontos para ir para produção
+    e a partir desses commits você gera as tags.
+    Da branch master existe uma branch de desenvolvimento
+    ou development . 
+    Das branch de develop são criada as branchs de features e todas essas funcionalidades
+    vão ser devolvidas para a branch de desenvolvimento.
+    Com todas as features prontas e devolvidas para a branch de desenvolvimento serão criadas
+    branch de  Realease que é quando começa o processo de lançar uma nova versão e os bugs
+    são corrigidos na branch de Realease. 
+    Depois de corrigir os bugs você deve colocar em produção para branch master e devolver
+    corrigindo para a de desenvolvimento.
+    Caso ocorra um problema na branch master (bugs ou falhas), você deve criar uma branch de 
+    correção (hotfix) e sempre que for corrigido deve ser mandada para master e logo Depois
+    para a de desenvolvimento

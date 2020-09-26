@@ -1,0 +1,80 @@
+<!--
+    Criando uma lista no site:
+        Para criar uma lista podemus usar a tag <ul></ul> lista não ordenada ( aparecerá  uma bolinha) 
+        e <ol></ol> lista ordenada (aparecerá números) e para adicionar elementos dentro da lista 
+        colocamos a tag <li></li>
+
+        Para estilizar a lista não seria interessando usar um identificador ,pois ele é único e teria
+        que ser criado um identificador para cada item da lista, para isso podemos trabalhar com as 
+        classes no html. E para chama-las no css utiliza-se o "." diferente do identificador que 
+        utilizava "#"
+
+        no css para mudar a font do texto usamos o atributo font-style: nome_font
+        no exemplo do site usarei a font italica
+    
+    Criando divisões:
+        Para criar divisões no site utilizaremos a tag <div></div> ela criará, como o nome já diz,
+        uma divisão entre os elementos sem mudar a aparencia do site
+
+    Conteúdo Inline vs Block:
+        os elementos do html ele pode ter as seguintes caracteristicas
+        -Inline:
+            um elemento com caracteristica inline ele permite que outros elementos fiquem do seu lado
+            ele vai ocupar apenas o espaço que foi marcado para ele. Porém ele não pode modificar
+            seu espaçamento interno e externo
+        -Block:
+            um elemento com caracteristica block ele ocupa toda a linha em que pertence , bloqueando
+            qualquer outro elemento de ficar do seu lado .Porém é permitido ajustar suas dimensões
+            internas e externas.
+        -Inline e Block:
+            um elemento com caracteristica inline-block ocupa somente seu espaço definido,permitindo
+            que outros elementos fiquem do seu lado.Também é possível modificar seus espaçamentos internos
+            e externos .
+    Todas essas caracteristicas são do atributo display no css.
+            
+    Para o site iremos trabalhar na parte da lista um elemento inline-block para que a imagem
+    possa ficar do seu lado , iremos dar seus devidos espaçamentos no css
+
+    colocaremos a tag ul como inline-block, por padrão o alinhamento do html é pela linha de baixo
+    para mudar isso utilize o atributo vertical-align: top . Tembém daremos um espaço maior para 
+    ele colocando o atributo width: 20% e um espaçamento externo pela direita de 15% com o atributo
+    margin-rigth: 15%
+
+    para o beneficios colocaremos uma margem interna de 20px e na principal uma margem interna de 30px,s
+        -->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Barbearia Estudo</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <img id="banner" src="./banner.jpg">
+        <div class="principal">
+            <h1>Sobre a Barbearia Estudo</h1>
+
+            <p>Localizada no coração da cidade a <strong>Barbearia Estudo</strong> traz para o mercado o que há 
+            de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Estudo</strong> já é destaque na 
+            cidade e conquista novos clientes a cada dia.</p>
+
+            <p id="missao" ><em>Nossa missão é: <strong >"Proporcionar auto-estima e qualidade de vida aos clientes"</strong></em>.</p>
+
+            <p >Oferecemos profissionais experientes e antenados às mudanças no mundo da moda.
+            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
+            satisfação dos nossos clientes.</p>
+        </div>
+        <div class="beneficios">
+            <h2>Beneficios</h2> 
+
+            <ul>
+                <li class="itens">Atendimento aos Clientes</li>
+                <li class="itens">Espaço diferenciado</li>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais Qualificados</li>
+            </ul>
+            <img src="./beneficios.jpg" class="imagembeneficios" >
+        </div>
+        
+    </body>
+</html>

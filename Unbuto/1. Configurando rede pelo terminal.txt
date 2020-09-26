@@ -1,0 +1,26 @@
+CONFUGURANDO A REDE DO SISTEMA PELO TERMINAL
+
+No unbuto versão 18 você deve entrar no terminal como root , para isso basta digitar no terminal:
+	-'sudo su'
+Com isso você devera digitar a senha do root , que normalmente é a mesma do usuário. Agora que
+você está logando como root voce digita o comando :
+	-ip addr
+Com isso você deve pegar o valor da placa de rede que está junto ao 2: no meu caso é o enp0s3
+com o valor em mente digite :
+	- nano /etc/network/interfaces
+*nano - é uma ferramenta built-in do unbuto que serve para editar textos pelo terminal
+com isso abrirá uma tela de interface.
+Nela tera algumas configurações , desce algumas linhas e digite :
+
+auto enp0s3
+iface enp0s3 inet static
+address 192.168.1.30
+netmask 255.255.255.0
+network 192.168.1.0
+gateway 192.168.1.1
+
+depois aperte ctrl+o depois enter para salvar e ctrl+x  depois enter para sair
+em seguida digite :
+	ifdown enp0s3
+para derrubar a rede e para liga-la novamente digite 
+	ifup enp0s3

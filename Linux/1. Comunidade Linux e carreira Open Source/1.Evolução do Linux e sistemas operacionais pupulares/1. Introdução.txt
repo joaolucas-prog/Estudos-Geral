@@ -1,0 +1,24 @@
+Componentes do linux
+    -Kernel(Cerne/Nucleo)
+        A base principal , que é o sistema operacional em si o coração do sistema operacional
+        não da para fazer nada
+    -Liberies (Bibliotecas)
+        bibliotecas que se comunicam com o hardwares, se comunicam com várias coisas diferentes
+        e fazem coisas diferentes
+    -Utilities(Utiitários)
+        Gerencia os processos do Sistema Operacional ,instalar aplicativos.
+    -User Interface(Interface com o Usuário)
+        interface que se comunica com o usuario , entradas como mouse , teclado e saída como 
+        terminais de texto.
+O sistema linux foi lançado com licença GPL ou seja , qualquer pessoa poderia usar aquele
+código fonte da maneira que quiser , fazer suas próprias distribuições , seja para web ,
+para computadores pessoais etc.
+Distribuições populares :
+    -Unbutu
+    -Debian
+    -Android
+    -CentOS
+    -openSUSE
+    -Red hat
+    -Linux Mint
+    -Scientific Linux

@@ -1,0 +1,4 @@
+Apache HTTPD(apache http server)
+   servidor do apache para o mundo http
+NGINX
+   servidor http

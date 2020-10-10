@@ -1,0 +1,32 @@
+Principais aplicações Desktop open sources Linux, sempre lembrando que existem diversos outros.
+    -Web
+        Firefox
+        Chromiuim
+
+    -E-mail Cliente
+        Thunderbird
+	
+    -Pacotes Office
+	-LibreOffice(derivação do OpenOffice após a Oracle comprar-lá)
+	-LibreOffice Calc(equivalente excel)
+	-LibreOffice Impress(equivalente ao powerpoint)
+	-LibreOffice Writer(equivalente ao word)
+	-LibreOffice Draw(faz desenhos vetoriais)
+	-LibreOffice Math(desenhar formulas matematicas)
+	
+    -Editor de Imagens
+	-GIMP(equivalente ao photoshop)
+	-Inkscape (equivalente ao ilustrator)
+
+    -Editor de Audio
+	-Audacity
+
+    -Editor 3D animações
+	-Blender
+
+    -MediaPLayeyr
+	-VLC
+
+    -Editor de video
+	-Cinelerra
+	-OpenShot

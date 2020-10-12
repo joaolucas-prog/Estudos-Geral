@@ -2,3 +2,18 @@ Apache HTTPD(apache http server)
    servidor do apache para o mundo http
 NGINX
    servidor http
+NFS(Network File System)
+   Compartilhamento de arquivos entre computadores conectados na rede localmente.
+SAMBA
+    Re-implemetação de um protocolo de rede que permite que a gente tenha um serviço
+    de arquivos para clientes windowns, cliente linux também pode utilizar.além disso
+    suporta impressoras
+CUPS
+    gerenciamento de impressão. servidor de impressão que suporta cliente windowns com 
+    base no SAMBA
+Postfix,OpenLDAP
+    Servidor para emails
+Bind
+    DNS(domain name server) servidor de dominio de servidores web.
+dnsmasq
+    dhcp server para distribuir ips

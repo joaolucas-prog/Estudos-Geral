@@ -30,3 +30,13 @@ Principais aplicações Desktop open sources Linux, sempre lembrando que existem
     -Editor de video
 	-Cinelerra
 	-OpenShot
+Linguagens instaladas no ubuntu desktop
+    -C
+    -perl
+    -python
+    -php
+    -shell
+Bancos de dados
+    -MySQL
+
+combinação famosa no mundo linux LAMPM (linux , apache , mysql, php)

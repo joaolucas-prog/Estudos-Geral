@@ -1,0 +1,54 @@
+<!--
+    Por padrão o html vem estruturado com alguns estilos de css por default , com isso a comunidade
+    disponibilizou um reset desses estilos que podem atrapalhar o visual do site , pois era bem
+    comun que as pessoas tivessem que zerar esses valores. Então usaremos esse reset no nosso site
+    e como ele zera tudo deve ser colocado antes de qualquer outro estilo para evitar bugs.
+
+    Posicionamento do elemento, por padrão o posicionamento do elemento ele vem como static
+    com seu espaço , ou seja seu posicionamento , vai sempre começar no final do ultimo elemento.
+    podemos muda isso para relative ou absolute
+        Relative:
+            o elemento continua na sua posição que é no final do ultimo elemento, porém ele
+            pode ser deslocado para qualquer lugar, mas ele vai continuar com sua posição
+        Absolute:
+            o elemento "sai" do seu espaço e pode ficar posicionado em qualquer lugar "por cima"
+            de outro elemento. Para ficar mais claro recomendo que você faça os testes e veja
+            a diferença na pratica
+
+            alterando seus valores para posicion: absolute; depois seus posicionamento top:valor;
+            right:valor etc.. e depois testar com o relative e comparar as diferenças no nosso caso
+            usaremos a posição absolute para ajustar a posição do nosso menu
+
+    Além disso quero que o menu fique centralizado com a imagem e no canto direito, para isso mudaremos
+    a sua posição para absolute e colocar right:0 e e top:110px que é a metade do tamanho da imagem para
+    ficar bem centralizada, mas existe um problema quando colocamos o elemento como absolute ele fica 
+    absoluto para a pagina html e não para uma elemento, para isso temos que criar uma "caixa" para por
+    o elemento "dentro" e coloca-la como relative para o conteudo ficar dentro. por questão de padrão
+    html de sites tb colocarei seu tamanho como 940px para que fique legal na maioria das telas
+
+    Também irei colocar o espaçamento interno do header com 20px em cima e em baixo e 0 para os lados
+    por pura questão visual
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - Barbearia Estudo</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./produtos.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="./logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>      
+        </header>
+    </body>    
+</html>

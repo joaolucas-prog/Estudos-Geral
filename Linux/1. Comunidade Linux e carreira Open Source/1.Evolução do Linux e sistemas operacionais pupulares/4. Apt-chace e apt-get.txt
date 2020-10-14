@@ -1,8 +1,0 @@
-Nos linux que derivam do debian existe um programa disponível chamado apt tendo ele vários
-executáveis , e um dele permite que a gente busque pacotes no registro geral de pacotes
-
-Para pesquisar um programa você digita "apt-cache search <oque_você_quer_instalar>"
-Para buscar um pacote você deve digitar "apt-get install <nome_pacote>"
-Porém para instalar pacotes você tem que instalar como um super usuário e para fazer isso
-você digita "sudo" na frente 
-ficando "sudo apt-get install <nome_pacote>".

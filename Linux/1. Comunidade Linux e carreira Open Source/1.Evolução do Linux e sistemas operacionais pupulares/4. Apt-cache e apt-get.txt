@@ -6,3 +6,18 @@ Para buscar um pacote você deve digitar "apt-get install <nome_pacote>"
 Porém para instalar pacotes você tem que instalar como um super usuário e para fazer isso
 você digita "sudo" na frente 
 ficando "sudo apt-get install <nome_pacote>".
+
+se eu quiser desinstalar um pacote que já está instalado , oque eu faço ?
+simples digite "sudo apt-get remove <nome_pacote>
+
+como descobrir a documentação de ajuda para saber quais os comandos de uma certa ferramenta.
+Existe uma ferramenta bem simples chamada "man", que ela mostra todos os comando da ferramenta
+
+Como o apt-get sabe quais são os pacotes existentes na internet, e como ele sabe quais as dependencias
+deve baixar para manter a funcionalidade ? O apt-get é um cliente, ou seja existe na internet
+algum servidor que guarda todos esses pacotes não são todos os pacotes do mundo , mas existe uma
+lista gigantesca de pacotes mas onde ele encontra esses arquivos usaremos o comando ls que mostra
+todos os arquivos de um diretorio e o arquivo fica localizado em  /etc/apt/sources.list agora quero 
+ver o conteudo do arquivo usamos o comando cat etc/apt/sources.list
+
+para atualizar a lista dos pacotes listado neste arquivo basta digitar sudo apt-get update

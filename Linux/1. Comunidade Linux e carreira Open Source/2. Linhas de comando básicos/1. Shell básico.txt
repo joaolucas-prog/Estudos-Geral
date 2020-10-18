@@ -1,0 +1,27 @@
+existem diversos tipos de shell o mais famoso e oque irei colocar aqui será comandos do bash
+em geral na sintaxe da linha de comando é 
+" <comando> <opções> <argumentos> "("command options arguments")
+(para verificar a documentação podemos usar help nome_comando para encontrar as opções do comando )
+
+curiosidade2: comandos abreviados "-" podem ser chamados ou separadamente ou junto exemplo
+"-l -a" ou " -la" e quando é por extenso preciso executar separadamente.
+
+curiosidae: geralmente as opções com "--" é uma palavra e "-" é um aliased (apelido).
+
+echo
+    devolve oque eu digitei pra ele (seria "equivalente" a um print)
+
+pwd
+    mostra a o local em que estou
+
+type
+    mostra o tipo do comando 
+(para verificar a documentação podemos usar help nome_comando para encontrar as opções do comando )
+
+ls (não é do shell)
+    mostra os nomes dos arquivos do diretório
+
+date(não é do shell)
+    mostra a data juntamente com o TimeZone
+
+

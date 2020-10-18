@@ -20,4 +20,14 @@ lista gigantesca de pacotes mas onde ele encontra esses arquivos usaremos o coma
 todos os arquivos de um diretorio e o arquivo fica localizado em  /etc/apt/sources.list agora quero 
 ver o conteudo do arquivo usamos o comando cat etc/apt/sources.list
 
-para atualizar a lista dos pacotes listado neste arquivo basta digitar sudo apt-get update
+para atualizar a lista dos pacotes listado neste arquivo basta digitar "sudo apt-get update", mas 
+se quiser atualizar apenas um pacote especifico digite "sudo apt-get install --only-upgrade <nome_pacote>"
+
+como gerencia e instala pacotes de arquivos que não estao arquivados no apt, no caso de linux baseado
+em debian como instalar arquivos do tipo deb. para isso você usa a ferramenta chamada dpkg nos linux
+baseados em debian o comando completo fica "sudo dpkg -i <nome_pacote>" mas apenas instala o pacote
+sem suas dependências , você terá que instalar todas as dependencias.
+
+como corrigir as dependencias e instala-las pelo apt , para isso basta digitar "sudo apt-get -f install"
+
+ainda com o dpkg podemos ver a lista de todos os pacotes do usuario digitando "sudo dpkg --list"

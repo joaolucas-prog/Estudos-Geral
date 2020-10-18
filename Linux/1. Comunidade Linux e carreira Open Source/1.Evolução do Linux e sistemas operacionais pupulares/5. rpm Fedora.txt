@@ -1,0 +1,14 @@
+nas maquinas baseadas em debian existe o gerenciador de pacotes apt, mas existe outras distribuição
+linux  e para eles existe outro tipo de pacote chamado rpm .Para ajudar recomando baixar na maquina
+virtual o fedora que utiliza esse tipo de pacote.
+
+comando para saber pacotes instalados :
+	"rpm --query --all"
+	formas reduzidas
+	"rpm -qa" ou "rpm -q -a"
+comando para instalar pacotes:
+	"sudo rpm -i <nome_pacote>"
+comando para remover pacotes:
+	"sudo rpm -e <nome_pacote>"
+o rpm é equivalente ao dpkg se quiser utilizar um parecido com o apt existe o gerenciador de pacotes
+em linux baseado em rpm chamado yum no caso do fedora eles pararam de usar o yum e trocaram para o dnf

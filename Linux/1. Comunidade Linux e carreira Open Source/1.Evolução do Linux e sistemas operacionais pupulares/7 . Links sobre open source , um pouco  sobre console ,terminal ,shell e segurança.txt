@@ -1,0 +1,24 @@
+Business model for open-souces
+https://en.wikipedia.org/wiki/Business_models_for_open-source_software
+
+creative commons license
+https://en.wikipedia.org/wiki/Creative_Commons_license
+
+GNU general public license (gpl)
+https://en.wikipedia.org/wiki/GNU_General_Public_License
+
+BDS licenses
+https://en.wikipedia.org/wiki/BSD_licenses
+
+shell (interpretador de comandos) ele pega o comando e interpreta , o mais utilizado no linux é o bash
+
+programa chamado terminal, oque roda dentro desse programa é um console e oque acontece é que os
+comando interpretados nesse console é feito pelo bash no caso de OS que não tem interface como um
+servidor, ele já entra direto no console. nesse caso para abrir novos consoles basta apertar
+ctrl+alt+f1 .
+
+Pode parecer obvio mas a senha que você usa é muito importante para a segurança dos dados
+para isso não é recomendado que você utilize palavras chaves como seu nome, nome de amigo, namorada
+data de nascimento, numero do telefone, sequencias de numero , sequencia de teclados, palavras
+que existam no dicionário . O recomendado é que sua senha tenha no minimo 15 characters sendo
+ela letras maiusculas, minunsculas, numeros e simbolos.

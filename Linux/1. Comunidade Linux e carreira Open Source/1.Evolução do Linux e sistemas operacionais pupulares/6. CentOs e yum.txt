@@ -1,0 +1,22 @@
+Como vimos no arquivo anterior o fedora não utiliza mais o gerenciador de pacotes yum apesar de ser rpm
+para isso irei utilizar o CentOs para executar os comandos, mas antes de tudo precisamos configurar
+a placa de rede e para isso digitamos "nmcli d" para visualizar quais são minhas placas de rede,
+para fazer uma condiguração nela em uma "interface" basta digitar "nmtui" edite a configuração
+e coloque a conecção automatica. Após isso você deve dar um restart na rede digitando 
+"systemctl restart network".
+
+Comando para pesquisar pacotes no yum:
+	"yum search <nome_pacote>"
+Comando para instalar pacotes no yum :
+	"sudo yum install <nome_pacote>"
+Comando para informações do pacote no yum:
+	"yum info <nome_pacote>
+Comando para remover um pacote com o yum:
+	"sudo yum remove lynx"
+Comando para fazer um chache (atualizar a lista de pacotes):
+	"yum makecache"
+Comando para atualizar as ferramentas já instaladas
+	"sudo yum update"
+
+local de arquivos de configuração do yum:
+	/etc/yum/yum.conf

@@ -1,0 +1,21 @@
+Para criar uma váriavel no shell basta você dizer o nome_da_variável=valor_da_variável
+"idade=22", e para usar essa variável utiliza o $ lembrando que não pode ter espaço e
+também não pode começar com um número
+"echo João tem , $idade anos".
+
+os processos filhos eles não tem acesso as variável de shell para dar acesso aos processos
+filhos tranformamos essa variável de shell em variável de ambiente para isso digitamos
+"export nome_variável" exemplo "export idade". E essa variável é valida apenas no shell
+que está aberto e os programas executados nele , em outro shell essas variáveis não existem mais.
+
+podemos também escrever tudo junto e já criar uma variável de ambiente e de shell
+"export idade=22" "export idade=22 nome=João"(aqui estou criando 2 variáveis)
+
+como ver as variáveis de ambient(environment) basta executar o comando env. esse comando env
+sozinho irá mostrar todas as variáveis de ambiente, mas eu posso passar argumentos para ela
+"env echo João tem $idade anos" isso irá aparecer "João tem anos" pois ele está criando um
+novo ambiente filho do ambiente atual e nesse novo ambiente não existe a váriavel idade, mas
+podemos passar a variável na hora de digitar o comando
+"env idade=22 echo João tem $idade anos" isso fará com que ele crie variáveis especificas
+para aquele comando executado, essas variáveis são temporárias só são usados na execução
+do comando e depois são descartadas. 

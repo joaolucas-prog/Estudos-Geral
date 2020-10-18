@@ -1,0 +1,61 @@
+header {
+    background: #BBBBBB; /*cor de fundo*/
+    padding: 20px 0; /*espaçamento interno*/
+}
+.caixa {
+    position: relative; /*posicionamento na página*/
+    width: 940px; /*tamanho do comprimento*/
+    margin: 0 auto; /*espaçamento externo*/
+}
+nav {
+    position: absolute; /*posicionamento na página*/
+    top: 110px; /*distancia relativa a parte de cima*/
+    right: 0; /*distância relativa a direita*/
+}
+nav li {
+    display: inline; /* comportamento do conteúdo */
+    margin: 0 0 0 15px; /*espaçamento externo*/
+}
+
+nav a {
+    text-transform: uppercase;/*transforma o texto em maiusculo*/
+    color: #000000;/*cor do texto*/
+    font-weight: bold;/*deixa o texto em negrito*/
+    font-size: 22px;/* tamanho do texto*/
+    text-decoration: none;/*retirar a linha do link*/
+
+}
+
+.produtos {
+    width: 940px;/*tamanho do comprimento*/
+    margin: 0 auto;/*espaçamento externo*/
+    padding: 30px;/*espaçamento interno*/
+}
+
+.produtos li {
+    text-align: center; /*alinhar o texto ao centro*/
+    display: inline-block;/* comportamento do conteúdo*/
+    width: 30% ;/*tamanho do comprimento*/
+    vertical-align: top; /*alinhamento vertical*/
+    box-sizing: border-box; /* ajusta o espaçamento para ficar dentro dos 30% */
+    margin: 0 1.5%;/*espaçamento externo*/
+    padding: 30px 20px;/*espaçamento interno*/
+    border: 2px solid #000000; /* desenha a borda */
+    border-radius: 10px; /* deixa a borda arredondada */
+
+}
+
+.produtos h2 {
+    font-size: 30px;/* tamanho do texto*/
+    font-weight: bold;/*deixa o texto em negrito*/
+}
+
+.produto-descricao {
+    font-size: 18px;/* tamanho do texto*/
+}
+
+.produto-preco {
+    margin-top: 10px;/*espaçamento externo na parte de cima*/
+    font-size: 22px;/* tamanho do texto*/
+    font-weight: bold;/*deixa o texto em negrito*/
+}

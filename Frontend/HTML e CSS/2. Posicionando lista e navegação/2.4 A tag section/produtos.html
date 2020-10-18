@@ -1,0 +1,56 @@
+<!--
+    Agora iremos começar a parte principal do conteúdo do site , como no cabeçalho na versão 5 do html
+    existe uma tag especifica para demarcar que é o conteudo principal <main></main> nas versões anteriores
+    era comun utilizar a tag <div></div>
+
+    No conteúdo principal iremos colocar uma lista de produtos que pode ser comprado na barbearia para isso
+    iremos criar nossa lista ul normal colocando li dentro dela porem iremos fazer uma estrutura dentro do li
+    pois irá conter titulo, imagem, descrição e preço do produto
+
+    descobrir agora como fazer um comentário no css então os comentários do css ficarão no css
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - Barbearia Estudo</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./produtos.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="./logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>      
+        </header>
+        <main>
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="./cabelo.jpg" class="produto-img">
+                    <p class="produto-descricao">Tesoura ou Máquina</p>
+                    <p class="produto-preco">R$ 25,00</p>
+                </li>
+                <li>
+                    <h2>Barba</h2>
+                    <img src="./barba.jpg" class="produto-img">
+                    <p class="produto-descricao">Confia que o pai desenha bem</p>
+                    <p class="produto-preco">R$ 18,00</p>
+                </li>
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="./cabelo+barba.jpg" class="produto-img">
+                    <p class="produto-descricao">Pacote completo cabelo e barba</p>
+                    <p class="produto-preco">R$ 35,00</p>
+                </li>
+            </ul>
+        </main>
+    </body>    
+</html>

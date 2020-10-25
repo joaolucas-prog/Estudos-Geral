@@ -1,0 +1,36 @@
+echo $?
+	mostra o "status" da execução do ultimo comando, 0 significa que tudo funcionou existem outros
+valores como 1 é erro em geral 130 fechado com ctrl+C , 127 command not found
+
+executando um comando com base na execução passada    
+    comando_um && comando_dois && ...(irá continuar os comando se o anterior for executado com sucesso).
+    comando_um || comando_dois || ... (irá parar assim que um comando for executado com sucesso).
+
+cat nome_arquivo
+	mostra o conteudo do arquivo
+
+*
+   interpretado e expandido pro valor da variável , "como se fosse uma espressão regular" ex:
+   "cat *.txt" ele mostrar o conteúdo de todos os arquivos que terminam com .txt
+   "cat texto*" irá mostrar o conteúdo de todos os arquivos que começa com o nome texto
+
+?
+   interpretado e substituido por um unico valor ,ex : suponha que você está em um diretorio
+com varios arquivos que começa com texto algum numero entre 0-9 e termina com .txt se executar o comando
+"cat texto?.txt" ele irá mostrar o conteúdo de todos os arquivos que comecem com texto tenha algum
+caracter e termine com .txt ele mostraria por exemplo conteúdos de arquivos com nome texto0.txt,
+texto1.txt ,.., textoa.txt ,textob.txt ,...
+
+[]	
+	classe de caracteres
+	ex: [0-9] , [a-z], ...
+
+[!]
+	negação classe de caracteres
+
+\
+	caracter de escape .
+
+{}
+	coloca padrões dinstintos 
+	ex: {primeiro*,*.txt,[0-9]}

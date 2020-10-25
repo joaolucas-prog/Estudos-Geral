@@ -1,0 +1,53 @@
+gedit(comando para editar arquivos)
+
+atalhos padrão do linux para o terminal
+
+seta pra cima
+	mostra o ultimo comando
+tecla home ou ctrl+a
+	começo da linha
+end ou ctrl+e
+	fim da linha
+ctrl+t
+	troca as 2 ultimas letras
+ctrl+l
+	limpar a tela
+ctrl+c
+	parar a execução
+
+para configurar esses comandos de atalhos utilizamos a ferramenta chamada set
+
+Para olhar o histórico de comandos digite:
+"history"
+
+ctrl+r 
+	uma busca reversa nos comandos digitador
+
+PATH
+	caminhos em que o linux vai procurar os comandos dos programas para executar, a ordem dos 
+diretórios é extremamente importante pois ele irá procurar na ordem que está os diretórios.
+
+Sabemos agora que o linux procura os programas que serão executados na variável path, mas se
+existir mais de 1 programa com mesmo nome em locais diferentes como mostro os locais? e apesar
+de saber que ele vai executar na prioridade da ordem que está os diretórios como saber de qual
+diretório ele está executando. Para isso utilizamos o comando which
+
+which nome_comando:
+	irá mostrar de qual diretório ele está rodando
+
+which -a nome-comando:
+	irá mostrar todos os diretórios que possuem aquele programa
+
+qual a tiferença entre type e which:
+	o type procura tudo , diretório, programa ,shell builtin ,enquanto o which olha o path
+e retorna apenas os programas existentes no path 
+
+whereis
+	procura os arquivos relacionados ao programa que está sendo executado
+
+tab
+	ele tenta completar um comando primeiramente,  se colocar um diretório ele irá
+procurar o nome de um diretório
+
+;
+	podemos usar o ";" para usar 2 comandos na mesma linha 

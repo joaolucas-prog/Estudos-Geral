@@ -1,0 +1,16 @@
+as variaveis de ambiente podem ter seu valor alterado e uma coisa interessante é que 
+podemos mudar a forma de como é mostrado o nosso console ao alterar a varivel ps1 existe um site
+que cria o comando no site bashrcgenerator.com por exemplo se eu quero só mostrar o usuário posso 
+fazer PWD="\u" ou qual diretório PWD="\w" .Se mudar a variável PWD você "engana" visualmente
+o seu console, pois você pode dizer que está em um local, mas oque faz você mudar o local é o cd
+então se você muda a variável PWD você engana visualmente sua localização mas não muda de fato seu
+diretório. A variável ps2 é um simbolo que significa o pulo de linha e por ai vai.
+
+HOME
+	mostra o diretorio raiz do usuario
+UID
+	numero do usuário
+LOGNAME
+	nome do usuario
+EDITOR
+	qual editor você prefere usar por padrão

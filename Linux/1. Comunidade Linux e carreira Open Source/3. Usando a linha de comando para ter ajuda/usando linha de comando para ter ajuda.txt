@@ -1,0 +1,39 @@
+comando help 
+    o help só tras informações de built-in do shell
+comando --help , -h ou -?
+    opção para alguns comandos que não são built-in
+
+pesquisar no navegador comando help
+
+man comando
+    pesquisa os manuais disponivel do comando. O visualizador padrão do man é o less nele podemos 
+descer a pagina do manual com as setas do teclado ou barra de espaço para pular de página, além
+disso é possivel procurar por algo al escrever a "/" ex / ascii.
+
+man -k palavra_chave
+	ao digitar man -k irá procurar todos os manuais que possuem a palavra-chave passada
+
+manpath
+    mostra os locais em que o man irá procurar os manuais
+
+info
+    outro comando para pegar informações , mostra uma listagem de informações que podem ser navegados
+e mostrar sua documentação, porém não está presente em todos os linux
+
+/usr/share/doc
+    localização das documentações dos programas
+
+howto
+    como fazer alguma coisa/usar um comando 
+
+locate nome_arquivo
+    procura e mostra todas as localizações do nome_arquivo, porém ele tem um banco de dados e 
+ao criar ou excluir um arquivo você deve executar o comando "sudo updatedb", mas existe outro
+comando que mostra os arquivos tirando oque foi exlcuido para não mostrar os falsos negativos
+locate -e nome_arquivo
+
+rm path_arquivo
+    deleta o arquivo desta localização
+
+touch nome_arquivo
+    cria um arquivo 

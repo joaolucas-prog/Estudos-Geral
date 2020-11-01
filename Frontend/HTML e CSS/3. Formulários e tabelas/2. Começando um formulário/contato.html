@@ -1,0 +1,47 @@
+<!--
+   Iremos começar o formulário , no html5 existe uma tag para os formulários chamada form,
+    dentro da tag form podemos colocar os inputs, todo input te um tipo . Caso o tipo seja
+    text ele é acompanhado de uma label, compartilhando o id, e se for do tipo submit tem 
+    um atributo value, com o nome que irá aparecer no botão.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - Barbearia Estudo</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="./logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>      
+        </header>
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome">
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
+
+                <input type="submit" value="Enviar Formulário">
+            </form>
+        </main>
+        <footer>
+            <img src="./logo-branco.png">
+            <p class="copyright">&copy; Copyrigth Barbearia Estudo - 2020</p>
+        </footer>  
+    </body>  
+</html>

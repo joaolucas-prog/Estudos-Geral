@@ -1,15 +1,20 @@
 package Herança;
 
-public class Funcionario {
+public  abstract class Funcionario { //classe absbtrata, não pode ser instanciada
 
 	private String nome;
 	private String cpf;
-	private double salario;
+	protected double salario; // proteced sugnifica que o atributo é "publico" para os filhos
 	
 	public Funcionario() {
 		
 	}
 	
+	public abstract double getBonificacao();//não há implementação na mãe, os filhos que implementam obrigatóriamente
+
+	public double getSalario() {
+		return salario;
+	}
 	
 	
 }

@@ -13,6 +13,10 @@ public class Fluxo2 {
 				String msg = ex.getMessage();// mensagem da exceção
 				ex.printStackTrace();// imprime o rastro do fluxo que ocorreu a exceção
 				System.out.println("ArithmeticException " + msg);
+			}finally{
+				System.out.println("Sempre irá executar");// o finally é um comando especial que sempre irá acontecer o código falhando
+				//											ou não , bastante utilizado para fechar conexão com banco , por exemplo.
+				//											o finally também permite fechar o try sem um catch.
 			}//catch(NullPointerException ex){
 //				String msg = ex.getMessage();// mensagem da exceção
 //				System.out.println("NullPointerException " + msg);

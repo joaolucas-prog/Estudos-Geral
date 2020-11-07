@@ -29,6 +29,7 @@ public class Aula1 {
 		 * .add(x) adiciona x ao arraylist lembrando que tipo x = <tipo>
 		 * .size() retorna o tamanho do arraylist
 		 * .get(i) devolve a referencia guardada na posição i
+		 * .contains(a) se a está contido no o arraylist
 		 * */
 		
 		

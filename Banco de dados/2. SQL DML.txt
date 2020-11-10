@@ -1,0 +1,97 @@
+SQL provê três instruções de atualização do conteúdo de tabelas previamente definidas 
+e criadas pelo CREATE TABLE
+
+INSERT
+UPDATE
+DELETE
+
+INSERT: 
+Serve para inserir uma ou mais linhas em uma tabela;
+
+DELETE: 
+Serve para excluir uma ou mais linhas de uma tabela;
+
+UPDATE: 
+Serve para alterar os dados de uma ou mais linhas de uma tabela
+
+Adicionando uma tupla na tabela
+INSERT  INTO <tabela> (
+	<LISTA dE atributos>,
+VALUES [(<VALORES>)],
+);
+
+é possível inserir várias linhas com um só comando.
+
+INSERT INTO Cliente (endereço, cidade, uf, cpf, codCliente, nomeCliente) 
+VALUES ('Av. Pres. Vargas 10',  'São Paulo', 'SP',  '12113231/0001-34', 720,  'Ana'),
+('Largo da Lapa, 27',  ‘Rio de Janeiro', 'RJ', '12835128/2346-9', 410, 'Rodolfo'),
+('Av. Domingos Ferreira, 1256', 'Recife', 'PE', '21763571/0232-9', 260, 'Susana’);
+
+
+DEFAULT VALUES
+caso não seja passado o valor da coluna o valor default é adicionado
+
+CREATE  TABLE livro (
+titulo 	VARCHAR(50) 	DEFAULT 'sem título’,
+autor 	VARCHAR(50) 	DEFAULT 'desconhecido’, 
+preco 	DOUBLE(5,00) 	DEFAULT 10.00,
+pais 	VARCHAR(20) 	DEFAULT 'Brasil');
+
+
+
+Adicionando tuplas usando SELECT:
+INSERT  INTO  <tabela> (<lista de atributos>)
+	SELECT 	<lista de atributos> 
+	FROM 	<tabela>
+	WHERE  <condição>
+
+EX: INSERT INTO livro (titulo, autor, preco) 
+SELECT titulo, autor, preco FROM lancamentos
+
+Atualizar dados existentes em todas as linhas que atendam a condição.
+UPDATE  <tabela> SET [<campo> = <valor>]
+[WHERE  <condição>]
+
+EX:
+UPDATE livro SET titulo = 'Software Engineering', autor = 'Sommerville'
+WHERE codLivro = 1
+
+Usando o comando DELETE para excluir  linhas selecionadas de uma tabela
+DELETE FROM  <tabela> [WHERE  <condição>]
+
+EX:
+DELETE FROM livro;   apaga todos os registros!!!
+DELETE FROM livro WHERE preco = 10; apaga apenas os livros que possuem preço igual a 10.
+
+SEMPRE lembrar de acrescentar a cláusula condicional WHERE nos comandos UPDATE e DELETE;
+
+DELETE FROM  livro;               exclui todos os registros!!!
+UPDATE livro SET preco = 0;   zera o preço de todos os livros!!!
+
+Transação: conjunto de comandos que são executados totalmente ou desfeitos totalmente;
+
+COMMIT: salva efetivamente as atualizações pendentes realizadas no banco de dados a partir 
+do último commit:
+
+ROLLBACK: desfaz todas as atualizações realizadas no banco de dados após último COMMIT.
+
+Indice
+Estrutura que permite rápido acesso às linhas de uma tabela.
+É baseado no valores de uma ou mais colunas.
+Um índice é uma outra tabela do BD na qual estão armazenados valores e ponteiros, organizados de forma ascendente ou descendente.
+O SGBD usa os índices para:
+pesquisar rapidamente determinado valor no BD; 
+através dos ponteiros localiza rapidamente em qual linha o valor desejado está armazenado.
+
+Podem aumentar a velocidade de pesquisa;
+Não há limite de quantidade;
+Criação de Índices:
+CREATE [UNIQUE] INDEX <nome-indice> ON <tabela> (<atributo>[ordem],...)
+
+Índice para chave primária: 
+Obrigatório, único e automático
+Ex: CREATE UNIQUE INDEX IDX_FILME01 ON FILME (CODFILME)
+
+Remoção de Índices: 
+DROP INDEX <nome-indice>
+

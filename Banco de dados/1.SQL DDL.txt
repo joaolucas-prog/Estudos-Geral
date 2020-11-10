@@ -1,0 +1,83 @@
+Criação de tabelas
+
+CREATE  TABLE <tabela> (
+	<descrição dos atributos>,
+PRIMARY KEY (<atributos>),
+[FOREIGN KEY (<atributos>) 
+	REFERENCES <tabela>  
+	ON DELETE RESTRICT | CASCADE | SET NULL
+	ON UPDATE RESTRICT | CASCADE | SET NULL]
+);
+
+Ex: 
+CREATE TABLE fornece (  
+codFornecedor int NOT NULL, 
+codPeca int NOT NULL, 
+quantidade int NOT NULL,
+PRIMARY KEY (codFornecedor, codPeca),
+FOREIGN KEY (codFornecedor) 
+	REFERENCES fornecedor (codFornecedor) 
+	ON DELETE CASCADE, 
+FOREIGN KEY (codPeca) 
+	REFERENCES peca (codPeca) 
+	ON DELETE RESTRICT) 
+ 
+descrição dos atributos:
+    -Lista dos atributos com respectivos tipos de dados
+primary key:
+    -descrição de chave primaria
+foreing key
+    -descrição da chave estrangeira
+
+A cláusula REFERENCE estabelece a restrição de integridade referencial entre as tabelas.
+Só podemos incluir essas restrições se as tabelas referenciadas já existirem, se não foram criadas,
+tem-se um erro.Podemos criar tabelas sem a cláusula REFERENCE e depois utilizar o comando 
+ALTER TABLE para realizar a restrição.
+
+FOREIGN KEY ... REFERENCES ...
+ON DELETE {CASCADE | SET NULL | RESTRICT}
+
+CASCADE
+   Quando a linha da tabela mãe é deletada, as linhas dependentes da tabela filha também serão
+ SET NULL
+   Especifica que as chaves estrangeiras que referenciam a  linha excluída devem ser tornadas vazias                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ RESTRICT (default)
+    Especifica que uma linha não pode ser excluída caso existam chaves estrangeiras que a referenciem
+
+FOREIGN KEY ... REFERENCES ...
+ON UPDATE {CASCADE | SET NULL | RESTRICT}
+
+CASCADE
+	Alteração da chave primária é propagada para as chaves estrangeiras que a referenciam
+SET NULL
+	Chaves estrangeiras que referenciam a linha alterada devem ser tornadas vazias
+RESTRICT (default)
+	Uma chave primária não pode ser alterada, caso existam chaves estrangeiras que a referenciem
+
+especificação dos atributos da tabela
+create table professor( 
+matricula int not null auto_increment,  //inteiro não nulo e auto incrementado
+nome varchar (50) not null, //varchar não nul
+rg numeric(10) unique, //numerico unico
+sexo char(1) check(sexo in ('M', 'F')),// char com 1 digito e verifica se é M ou F 
+idade int check(idade between 21 and 80),//inteiro e verifica entre 21 e 80
+titulacao enum('graduado', 'especialista', 'mestre', 'doutor'), //enum diz que nunca vai variar entre esses
+categoria varchar(15) check (categoria in ('auxiliar', 'assistente', 'adjunto', 'titular')), 
+noTurmas int check(noTurmas >= 0), 
+constraint pkProf primary key (matricula)
+
+
+Alteração da tabela
+ALTER TABLE  <tabela>
+   [DROP <atributo>]
+   [ADD <atributo> tipo [NOT NULL | NOT NULL WITH DEFAULT ] 
+   [MODIFY <atributo> tipo (tam) [NOT NULL | NOT NULL WITH DEFAULT]
+
+destruição da tabela
+DROP TABLE <TABELA>;
+Elimina a tabela (vazia ou não) que foi previamente criada do dicionário de dados.
+
+EXEMPLO:
+DROP TABLE PECA;
+
+

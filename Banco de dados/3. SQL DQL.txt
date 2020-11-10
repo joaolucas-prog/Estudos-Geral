@@ -1,0 +1,147 @@
+Consultas:
+As consultas são especificadas através da declaração:
+	SELECT [Lista de Atributos]
+	FROM [Lista de Tabelas]
+	WHERE [Lista de Condições];
+	
+	Lista de Atributos = nomes dos atributos a recuperar separados por vírgula.
+	Lista de Tabelas = nomes das tabelas de onde os atributos serão recuperados.
+	Lista de Condições = expressão booleana que indica as linhas que serão recuperadas pela consulta.
+
+Projeção:
+Selecionar atributos de uma tabela
+Ex: SELECT codigo, nome FROM Cliente;
+
+Clausula Distinct no Select
+Quais os diferentes salários dos professores?
+	SELECT  DISTINCT salario FROM prof;
+
+Quais são as matriculas de alunos, diferentes, na tabela aluno_paga?
+	SELECT DISTINCT mat	FROM aluno_paga
+
+Seleção
+Listar nome e cargo dos professores com salário > R$ 900,00
+   SELECT Nome, Sexo 
+   FROM Prof             
+   WHERE salario > 900
+
+aliases
+É uma forma de modificar os nomes das colunas, substituindo-os por um alias.
+SELECT <campo> AS <alias> FROM <tabela>
+Exemplos
+SELECT mat AS matricula FROM aluno;
+
+Utilizando literais para tornar os resultados mais legíveis.
+SELECT mat "Número de matrícula" FROM aluno;	
+
+produto cartesiano
+Obtido através de um select em várias tabelas, onde a condição (where) não aparece.
+
+SELECT  * FROM aluno, aluno_paga
+
+JUNÇÂO
+Envolvem mais de uma relação;
+Realiza o produto cartesiano entre as relações envolvidas;
+Inclui uma condição de junção;
+Permite combinar linhas de duas ou mais tabelas baseado nessa condição de junção.
+
+SELECT  E.codP, E.codDep, E.Quant, P.nome 
+FROM Estoque E, Peca P 
+WHERE E.CodP = P.Cod;
+
+INNER JOIN
+Recuperar dados da junção de duas tabelas:  
+SELECT C.Nome, TC.Descricao
+	FROM Cliente C
+	INNER JOIN TipoCliente TC
+	ON (TC.TipoCliente = C.TipoCliente)
+EX:
+SELECT F.nome funcionario, C.nome chefe
+FROM Funcionario F
+INNER JOIN Funcionario C 
+ON  (C.mat = F.matChefe)
+
+
+Condições de junção e condições de filtro são separadas em duas cláusulas diferentes 
+(a subcláusula ON e a cláusula where, respectivamente), tornando a consulta mais fácil de 
+entender e manter.
+As condições de junção para cada par de tabelas estão contidas em suas próprias cláusulas ON, 
+tornando menos provável que parte de uma junção seja omitida por engano.
+Consultas que usam a sintaxe de junção SQL92 são portáveis entre servidores de banco de dados, 
+ao passo que a sintaxe antiga where é ligeiramente diferente entre os diferentes servidores.
+
+
+Realizando cálculo com informação selecionada
+Pode-se criar um campo que não pertença à tabela original, e seja fruto de cálculos sobre alguns 
+atributos da tabela.
+Exemplo:
+Mostrar o novo salário dos professores calculado com base no reajuste de 60% para os que ganham 
+abaixo de R$ 1.000,00
+
+SELECT nomeP, (salario * 1.60) “Novo salário” 
+FROM    Prof
+WHERE salario < 1000
+
+Operadores
+Operadores relacionais 
+=, != ou <>, >, <, <=, >=,
+Operadores lógicos 
+AND, OR e NOT
+Outros operadores
+- BETWEEN e NOT BETWEEN
+- LIKE e NOT LIKE
+- IS NULL e IS NOT NULL 
+- EXISTS e NOT EXISTS
+
+Operações sobre conjuntos
+- IN, UNION,  INTERSECT, MINUS
+Operações sobre Strings (LIKE)
+Operações sobre os dados de saída
+- Operadores aritméticos (+, -, *, /)
+- Operações sobre Strings (concatenação)
+- Funções Agregadas (SUM, MAX, AVG, MIN, COUNT)
+
+BETWEEN e NOT BETWEEN
+Substituem o uso dos operadores  <=  e  >= 
+	... WHERE <nome atributo> 
+	BETWEEN <valor1> and <valor2>
+Exemplo:
+Listar os empregados com salário entre R$ 1.000,00 e R$ 2.000,00
+	SELECT  *  FROM  EmpregadoWHERE salario BETWEEN 1000 and 2000
+
+ LIKE e NOT LIKE
+
+Operadores que só se aplicam sobre atributos do tipo char. 
+
+Operam como = e !=, utilizando os símbolos: % (substitui uma palavra) e _  (substitui um caractere).
+
+      ...WHERE  <nome atributo> LIKE <valor1>
+SELECT * FROM disc WHERE nomeD LIKE  '%Banco de Dados%’;
+SELECT * FROM disc WHERE nomeD LIKE  '_anco de Dados%';
+
+Listar os empregados que tem como primeiro nome  ‘José‘.
+
+	SELECT  Nome 
+   FROM Empregado
+   WHERE Nome LIKE ‘José%’
+
+IS NULL e IS NOT NULL 
+Identificam valores nulos dos atributos:
+	... WHERE <nome atributo> IS NULL
+	Exemplo:
+Listar os projetos que não tenham local definido
+  SELECT * FROM Projeto WHERE Local IS NULL
+
+SObre conjuntos
+ Operador IN
+- Verifica se um dado valor pertence a um conjunto;
+
+SELECT nomeA
+FROM AlunoWHERE Mat IN (1, 2, 3);
+
+Funções agregadas
+Utilizando funções sobre conjuntos;
+Fornecem um único valor a partir de uma coluna inteira de dados quando são utilizadas sozinhas 
+em um SELECT:
+AVG()(media), MAX()(maior), MIN()(menor), SUM(), COUNT()(conta)
+

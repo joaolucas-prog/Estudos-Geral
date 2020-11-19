@@ -1,5 +1,8 @@
 package br.com.ingrao.collections.aulas;
 
+import java.util.Collections;
+import java.util.HashSet;
+
 import br.com.ingrao.collections.gerenciadorCursos.Aluno;
 import br.com.ingrao.collections.gerenciadorCursos.Aula;
 import br.com.ingrao.collections.gerenciadorCursos.Curso;
@@ -24,7 +27,8 @@ public class Aula6 {
 
 		javaColecoes.getAlunos().forEach(a -> {
 			System.out.println(a);
-		});
+		});		
+
 	}
 
 }

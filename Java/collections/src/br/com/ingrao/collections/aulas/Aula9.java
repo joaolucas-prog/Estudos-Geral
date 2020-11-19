@@ -1,5 +1,7 @@
 package br.com.ingrao.collections.aulas;
 
+import java.util.HashMap;
+
 import br.com.ingrao.collections.gerenciadorCursos.Aluno;
 import br.com.ingrao.collections.gerenciadorCursos.Aula;
 import br.com.ingrao.collections.gerenciadorCursos.Curso;
@@ -24,5 +26,7 @@ public class Aula9 {
 		
 		Aluno aluno = javaColecoes.buscaMAtriculado(1111);
 		System.out.println(aluno);
+		
+		
 	}
 }

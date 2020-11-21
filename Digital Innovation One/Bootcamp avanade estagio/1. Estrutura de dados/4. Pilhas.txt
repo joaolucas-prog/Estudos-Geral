@@ -1,0 +1,20 @@
+Uma Pilha é uma estrutura de dados que serve como uma coleção de elementos , e permite o acesso
+a somente um item de dados por vez.
+O acesso aos itns de uma pilha é restrito - somente um item pode ser lido ou removido por vez
+
+Tipos de Pilhas:
+
+LIFO
+A estrutura do tipo PILHA LIFO ( last in first out) ou UEPS ( ultimo que entra primeiro que sai),
+apresenta o seguinte critério: o primeiro elemento a ser retirado é o ultimo que tiver sido inserido.
+
+push insere
+pop remove e devolve elemento
+
+FIFO
+A estrutura do tipo PILHA FIFO ( First in first out) ou PEPS( primeiro que entra primeiro que sai)
+, apresenta o seguinte critério: o primeiro elemento a ser retirado é o primeiro que tiver 
+sido inserido.
+
+enqueue empilha
+dequeue remove e devolve o elemento

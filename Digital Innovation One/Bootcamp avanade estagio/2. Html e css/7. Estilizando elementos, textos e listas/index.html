@@ -1,0 +1,200 @@
+<!--
+Estilizando elementos
+Agora que entendemos o box-model podemos focar em deixar nosso site mais bonito, então vamos repassar pelas 
+propriedades já citadas:
+
+Padding e Margin
+Anteriormente usamos o padding e o margin da forma mais básica, com apenas um valor, mas eles são mais poderosos 
+que isso. Se quisermos atribuir tamanhos diferentes para cada lado do box nós podemos, e vamos ver três formas 
+de fazer isso.
+
+A primeira é colocando um valor para as partes superior e inferior e depois para os lados esquerdo e direito.
+
+O valor de 10 pixels se refere ao eixo Y, ou partes superior e inferior, e os 5 pixels se referem aos lados 
+esquerdo e direito.
+
+A segunda forma é dando valores para cada lado do box.
+
+Então começamos pelo topo com 15 pixels, passamos o lado direito com 10 pixels, depois para a parte inferior 
+com 5 pixels e por último o lado esquerdo com 0, e sempre nessa ordem.
+
+Uma boa dica também é que quando o valor for 0 não precisamos não precisamos colocar a unidade.
+
+ 
+A terceira forma é com as propriedades específicas para cada lado, até agora tínhamos visto atalhos para 
+essas propriedades.
+
+Essa opção é mais usada quando temos o mesmo valor para 3 lados, e o quarto precisa ter um valor diferente, 
+então usamos o padding com apenas um valor e uma dessas opções para representar o lado diferente.
+
+ 
+
+Background
+A propriedade background também é um atalho para várias propriedades, mas isso vocês podem absorver aos 
+poucos, e uma boa opção de leitura é a documentação do MDN.
+
+Por enquanto veremos apenas como mudar a cor de fundo.
+
+ 
+
+E aqui temos 3 formas de colocar uma cor de fundo, e ainda existem outras.
+
+A primeira é pelo nome da cor em inglês, a segunda é pelo código hexadecimal e a terceira é usando apenas o 
+atalho background.
+
+ 
+
+Border
+Vimos que a propriedade border pode ter 3 valores: a largura, a cor e o estilo, mas existem algumas 
+particularidades nisso.
+
+A largura pode ser usada com várias unidades, como px, em e mm. A cor pode ser atribuída pelo nome ou por 
+um código hexadecimal, assim como fizemos com o background, e o estilo é representada por palavras-chave, 
+vamos ver algumas delas:
+
+ 
+
+solid: mostra uma borda simples e reta;
+
+dotted: são bolinhas com um pequeno espaçamento entre elas;
+
+dashed: forma uma linha tracejada.
+
+E aproveitando que mostrei esse código temos que falar sobre como separar a estilização dos lados de uma borda.
+
+E se você não quiser usar a propriedade border existem as propriedade específicas para cada aspecto de uma borda, 
+são elas border-width para a largura, border-color para a cor e border-style para o estilo.
+
+Aqui temos o mesmo código anterior de duas formas diferentes, a primeira com o atalho border e a segunda com cada 
+propriedade específica.
+
+E depois disso podemos juntar os lados com os aspectos de uma borda e criar uma regra mais específica ainda.
+
+ 
+
+Border-radius
+
+E a última propriedade é o border-radius, ele permite arredondar os cantos de um elemento. Podemos usar várias 
+unidades, mas as mais comuns são os pixels e a porcentagem.
+
+Colocando apenas um valor mudamos todos os cantos do elemento, mas seguindo aquela mesma ordem que vimos no 
+padding e margin - topo, direita, inferior e esquerda -  conseguimos alterar cada canto separadamente.
+
+ 
+Exercício
+Neste exercício vamos deixar o nosso site um pouco mais bonito usando as propriedades que acabamos de ver.
+
+Vamos aumentar o padding para 15 pixels e colocar uma margem de também de 15 pixels só na parte de baixo do post.
+
+Quando olhamos para os textos percebemos que os espaçamentos estão diferentes do restante do post, então vamos 
+padronizar isso.
+
+No título do post vamos retirar todas as margens para depois colocar apenas uma margem inferior de 15 pixels. 
+E no corpo do post precisamos adicionar uma classe e remover todas as margens para depois adicionar uma margem 
+superior de 15 pixels.
+
+Podemos manter o background branco, mas vamos diminuir a largura das bordas para 2 pixels e mudar a cor para a 
+mesma do texto - #505050 - e por último adicionaremos um border-radius, 5 pixels são suficientes. Podemos 
+adicionar esse mesmo de valor de border-radius na imagem, para isso vamos acrescentar uma class a imagem antes.
+
+ 
+
+Estilizando textos
+Já sabemos que podemos mudar cor e tamanho de algumas fontes, e agora vamos nos aprofundar nisso.
+
+ 
+
+font-family
+Com o font-family podemos alterar a fonte dos nossos textos, como uma fonte da internet ou uma que esteja 
+instalada no nosso computador, mas vamos nos ater às fontes seguras, chamadas de web safe fonts.
+
+Essas fontes são chamadas assim pois são encontradas em quases todos os sistemas e podem ser usadas sem preocupação.
+
+ 
+
+font-size
+O font-size nos ajuda a mudar o tamanho do texto, existem algumas unidades de medida para ele mas por enquanto 
+os pixels são suficientes para nós.
+
+ 
+
+font-style
+Usamos o font-style para tornar um texto itálico, na maioria das vezes você usará apenas o valor italic para ele, 
+mas se precisar tirar o itálico de um texto você pode usar o valor normal.
+
+font-weight
+o peso da fonte, podemos utilizar o normal , ou deixar em negrito colocando o valor bold
+
+text-transform:
+formata todos os textos para maiusculas ou minusculas, temos o valor lowercase para minusculo, uppercase para
+maiusculo e capitalize para deixar o inicio de cada palavra em maiusculo
+
+text-decoration
+"decora o texto" colocando um sublinhado o underline deixa o texto sublinhado, o overline deixa uma linh em 
+cima do texto e o overline-through no meio do texto
+
+Listas
+
+list-style-tipe
+ul: square(quadrado),"\1F44D"(emoji), none(vazio) ... etc
+ol:upper-roman(letras romanas) , etc ..
+
+list-style-image
+oloca uma imagem mas lembre-se de por url()
+
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>JoãoLucasProg Site</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <img src="./imagem_joao.png" alt="foto joao" id="photo">
+    <h1 id="title">João Lucas</h1>
+  </header>
+  <section>
+    <header>
+      <h2 class="sub_title">Posts</h2>
+      <article class="post">
+        <header>
+          <h3 class="post_title">Post #1</h3>
+          <img src="./imagem_post.jpg" alt="foto aleatoria de code do site pixabay">
+          <p class="post_content">
+            Lorem ipsum dolor sit amet, <a href="https://www.impsu.com" target="_blank">
+              consectetur adipiscing</a> elit. Donec dapibus leo accumsan sollicitudin
+            <a href="mailto:algum@email.com" target="_blank">lacinia1</a>. Mauris non nunc ullamcorper, mattis ipsum quis,
+            iaculis ipsum. Praesent ultricies pulvinar
+            <a href="tel:40028922" target="_blank">consequat</a>. Fusce ornare dapibus eros eu molestie. Donec molestie tellus
+            non imperdiet bibendum.
+            Maecenas dictum a tortor vitae congue. Proin sodales risus quis maximus scelerisque. Nam ante lectus,
+            consectetur sed massa nec, mollis congue sem. Praesent imperdiet sem ut auctor fringilla. Vivamus
+            consectetur molestie turpis eu placerat. Aliquam erat volutpat. In hac habitasse platea dictumst.
+            Vestibulum et imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+      </article>
+    </header>
+  </section>
+  <footer>
+    <ul class="contacts_list">
+      <li>
+        <a href="mailto:algum@email.com">Email</a>
+      </li>
+      <li>
+        <a href="https://github.com/joaolucas-prog" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-lucas-menezes-paulino-da-paes-4663471b8/"
+          target="_blank">LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

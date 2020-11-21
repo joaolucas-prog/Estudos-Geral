@@ -1,0 +1,15 @@
+A diferença entre listas e arrays é a de que as listas possuem tamanho ajustável, enquanto arrays 
+possuem tamanho fixo.
+
+tipos de listas
+
+Ligadas
+ Na estrutura do tipo lista existem os nós onde cada um dos nós conhece o valor que está sendo
+armazenado em seu interior além de conhecer o elemento posterior a ele: por isso ela é chamada
+de "lista ligada" , pois os nós são amarrados com essas indicações de qual é o próximo nó.
+Duplamente Ligada
+A diferença das listas ligadas para as listas duplamente ligadas é que ela é bidirecional.
+Vimos que , naturalmente , não conseguimos "andar para trás" em listas ligadas, pois os né de uma
+lista ligada sabem somente quem é o próximo elemento . Nas listas duplamente ligadas, os nós
+sabem quem é o proximo elemento e também quem é o elementoanterior o que permite navegação
+ reversa.

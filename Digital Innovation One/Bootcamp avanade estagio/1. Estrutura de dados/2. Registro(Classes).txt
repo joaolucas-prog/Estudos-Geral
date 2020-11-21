@@ -1,0 +1,7 @@
+Enquanto Arrays nos permite armazenar vários dados de um unico tipo de dados, o recurso de Registro nos
+permite armazenar mais de um tipo de dado
+
+Toda estrutura de registro tem um nome (ex: livro) , e seus campos podem ser acessados por meio do uso
+do operador ponto (.). Por exemplo , para acessar o preço de um livro , poderíamos utilizar a seguinte
+declaração :
+livro.preco

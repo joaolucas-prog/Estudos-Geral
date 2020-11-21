@@ -1,0 +1,62 @@
+<!--
+    Imagens
+A web também é feita de imagens e para representá-las temos o elemento <img>, ele é um daqueles elementos sem 
+tag de fechamento.
+
+O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o alt.
+
+O src é obrigatório e guarda o caminho para a imagem que você quer mostrar na página.
+
+O alt não é obrigatório mas é altamente recomendado por melhorar a acessibilidade, ele mostra a descrição da 
+imagem caso ela não carregue e leitores de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.
+
+Prática
+Vamos adicionar uma imagem ao cabeçalho da página e uma imagem a postagem.
+
+Primeiro vamos colocar as imagens na pasta do nosso projeto. Para a imagem do cabeçalho eu escolhi uma foto
+ minha com 100 pixels de largura e 100 pixels de altura e para a imagem da postagem eu procurei por html code no site Unsplash, escolhi uma das imagens e deixei ela com 960 pixels de largura por 322 pixels de altura.
+
+Dentro do primeiro <header> da página e antes do <h1> iremos adicionar um elemento img e no atributo src 
+colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado 
+para a imagem, como no meu caso é uma ilustração, colocarei Ilustração do rosto de Lucas Vilaboim.
+
+E dentro do <header> do <article> vamos fazer a mesma coisa, mas agora depois do <h3>, e no atributo alt 
+colocaremos Editor de texto mostrando códigos HTML.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+      <meta charset="utf-8">
+      <title>JoãoLucasProg Site</title>
+    </head>
+    
+    <body>
+      <header>
+          <img src="./imagem_joao.png" alt="foto joao">
+        <h1>João Lucas</h1>
+      </header>
+      <section>
+        <header>
+          <h2>Posts</h2>
+          <img src="./imagem_post.jpg" alt="foto aleatoria de code do site pixabay"
+        </header>
+        <p>
+            Lorem ipsum dolor sit amet, <a href="https://www.linkedin.com/in/jo%C3%A3o-lucas-menezes-paulino-da-paes-4663471b8/" target="_blank">
+            consectetur adipiscing</a> elit. Donec dapibus leo accumsan sollicitudin 
+            <a href="mailto:algum@email.com" target="_blank">lacinia1</a>. Mauris non nunc ullamcorper, mattis ipsum quis, iaculis ipsum. Praesent ultricies pulvinar
+            <a href="tel:40028922" target="_blank">consequat</a>. Fusce ornare dapibus eros eu molestie. Donec molestie tellus non imperdiet bibendum. 
+            Maecenas dictum a tortor vitae congue. Proin sodales risus quis maximus scelerisque. Nam ante lectus, 
+            consectetur sed massa nec, mollis congue sem. Praesent imperdiet sem ut auctor fringilla. Vivamus 
+            consectetur molestie turpis eu placerat. Aliquam erat volutpat. In hac habitasse platea dictumst. 
+            Vestibulum et imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <article>
+          <header>Post #1</header>
+        </article>
+      </section>
+      <footer></footer>
+    
+    </body>
+    
+    </html>

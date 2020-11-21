@@ -1,0 +1,3 @@
+A estrutura do tipo File admite remoção e inserção de novos sujeitos à seguinte regra de operação:
+o elemento removido é oque está na estrutura há mais tempo ou seja, o primeiro objeto inserido na 
+fila é também o primeiro a ser removido seguindo o conceito FIFO.

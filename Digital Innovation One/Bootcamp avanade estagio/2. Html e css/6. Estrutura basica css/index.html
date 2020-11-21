@@ -1,0 +1,154 @@
+<!--
+CSS 3
+Definição e seletores
+Após a criação do HTML a necessidade de formatar as páginas ficou evidente, assim, em 1996, foi criada a 
+linguagem de estilo que conhecemos por CSS.
+
+A sintaxe é bem simples e pode ser explicada com a frase "você cria regras de estilo para elementos ou 
+grupos de elementos".
+
+Vamos usar um elemento HTML que vimos anteriormente, a âncora <a>, para exemplificar.
+
+Uma regra CSS é representada por um seletor ou um grupo de seletores, no nosso caso é o <a>, então dentro de 
+um par de chaves adicionamos as declarações, no exemplo acima estamos alterando cor e tamanho da fonte dessa 
+âncora, as declarações são formadas por uma propriedade e um valor.
+
+Percebam que podemos colocar vários seletores em uma regra separando-os por vírgula.
+
+E há um último detalhe nesse exemplo: a pseudo-classe. Elementos HTML sofrem alterações causadas pela 
+interação do usuário, como mover o mouse por cima ou clicar nesse elemento.
+
+O a:hover do exemplo significa que a âncora também terá essa aparência quando o usuário passar o mouse 
+por cima de um hyperlink.
+
+ID x Classe
+No exemplo anterior criamos uma regra que altera um elemento HTML diretamente, mas isso significa 
+que todos os elementos <a> ficarão com aquela aparência, e normalmente temos sites mais complexos que 
+precisam de várias regras diferentes para elementos iguais.
+
+Para ficar mais tangível vamos relembrar um pouco o site que começamos a fazer no módulo passado, ele 
+tinha vários elementos header, mas não vamos querer que o header principal tenha a mesma formatação que o 
+header de uma postagem, é aí que entram os IDs e Classes.
+
+O seletor que vimos no primeiro exemplo é um seletor de tipo, pois ele representa um elemento HTML, e com 
+IDs e Classes podemos representar qualquer tipo de elemento mas há algumas diferenças entre eles:
+
+ID: é representado pelo símbolo # (hash) seguido de um nome para esse ID.
+
+Classe: a classe é representada de forma parecida do ID, mas é precedida por um ponto em vez do hash.
+
+E a diferença mais importante entre eles é a forma como devem ser usados: o ID só pode ser usado uma vez 
+em uma página HTML enquanto a classe não tem restrições.
+
+ 
+
+Exercício
+Vamos adicionar algumas classes no nosso site e alterar alguns elementos, mas antes precisamos adicionar 
+um arquivo CSS a nossa página.
+
+No módulo de HTML descobrimos que podemos adicionar CSS de duas formas, com o elemento style, e assim suas 
+regras ficarão no arquivo HTML, ou podemos criar um arquivo CSS e adicioná-lo na página através do elemento 
+link, e é essa forma que usaremos.
+
+Crie um elemento link dentro do head do seu arquivo e adicione os atributos rel="stylesheet" e href="style.css", 
+o rel denota o tipo de arquivo que estamos incluindo na página e o href é o caminho para o arquivo. E na mesma 
+pasta do arquivo HTML crie um arquivo chamado style.css.
+
+Agora sim vamos ao CSS, adicione um ID #title ao h1 da página, pois queremos que ele seja único, e depois 
+adicione as classes .subtitle e .post_title ao h2 e h3, respectivamente.
+
+No arquivo CSS vamos mudar a cor desses três títulos, e depois alterar o tamanho da fonte do título da postagem.
+
+ 
+
+Box-model
+Quando estamos criando o layout de um site o navegador representa cada elemento HTML  como uma caixa retangular, 
+isso é o box-model. E com CSS nós alteramos a aparência dessa caixa (largura, altura, cor de fundo, etc.). Essa 
+caixa é composta por 4 áreas: o conteúdo, o padding, a borda e a margem.
+
+As margens (margin) são espaçamentos entre elementos;
+As bordas (border) ;
+O padding é um espaçamento entre as bordas e o conteúdo, a diferença para as margens é que declarações de imagem 
+de fundo funcionam nele;
+O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, um vídeo;
+ 
+
+Exercício
+Para enxergamos o box-model vamos adicionar cores e bordas a alguns elementos.
+
+Primeiro adicionaremos uma cor de fundo para a visualização ficar mais fácil, usaremos a propriedade background 
+com o valor #fcfcfc no elemento body.
+
+Depois vamos adicionar uma classe ao <article>, pode ser .post, e então vamos colocar a cor branca de fundo com 
+  a propriedade background e o valor #FFF. Agora conseguimos enxergar o content do box-model.
+
+Vamos adicionar um padding de 10 pixels neste mesmo article. Perceberam o espaçamento que surgiu em volta do 
+nosso conteúdo?
+
+Agora adicionamos um borda mais escura a ele com a propriedade border. Vou falar mais detalhadamente sobre border 
+mais a frente, mas por enquanto vamos deixar essa borda com 3 pixels de largura, o contorno sólido e a cor azul.
+
+E por último vamos adicionar uma margem do lado de fora do post com a propriedade margin e o valor 10 pixels.
+
+E agora inspecionando o nosso elemento conseguimos todas aquelas camadas citadas antes: o conteúdo em azul, o 
+padding em verde, as bordas em marrom e as margens em laranja.
+
+E já que começamos a falar sobre bordas e cor de fundo, no próximo vídeo vamos nos aprofundar nessas propriedades.
+
+-->
+/
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>JoãoLucasProg Site</title>
+  <link rel="stylesheet" href="./style.css"
+</head>
+
+<body>
+  <header>
+    <img src="./imagem_joao.png" alt="foto joao">
+    <h1 id="title">João Lucas</h1>
+  </header>
+  <section>
+    <header>
+      <h2 class="sub_title">Posts</h2>
+      <article class="post">
+        <header>
+          <h3 class="post_title">Post #1</h3>
+          <img src="./imagem_post.jpg" alt="foto aleatoria de code do site pixabay">
+          <p>
+            Lorem ipsum dolor sit amet, <a href="https://www.impsu.com" target="_blank">
+              consectetur adipiscing</a> elit. Donec dapibus leo accumsan sollicitudin
+            <a href="mailto:algum@email.com" target="_blank">lacinia1</a>. Mauris non nunc ullamcorper, mattis ipsum quis,
+            iaculis ipsum. Praesent ultricies pulvinar
+            <a href="tel:40028922" target="_blank">consequat</a>. Fusce ornare dapibus eros eu molestie. Donec molestie tellus
+            non imperdiet bibendum.
+            Maecenas dictum a tortor vitae congue. Proin sodales risus quis maximus scelerisque. Nam ante lectus,
+            consectetur sed massa nec, mollis congue sem. Praesent imperdiet sem ut auctor fringilla. Vivamus
+            consectetur molestie turpis eu placerat. Aliquam erat volutpat. In hac habitasse platea dictumst.
+            Vestibulum et imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+      </article>
+    </header>
+  </section>
+  <footer>
+    <ul>
+      <li>
+        <a href="mailto:algum@email.com">Email</a>
+      </li>
+      <li>
+        <a href="https://github.com/joaolucas-prog" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-lucas-menezes-paulino-da-paes-4663471b8/"
+          target="_blank">LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

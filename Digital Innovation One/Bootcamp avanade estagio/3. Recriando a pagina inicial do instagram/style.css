@@ -33,7 +33,34 @@ body {
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 40rem;
+    transition: opacity 500ms;
+}
+
+#phone-photo1 {
+    display: flex;
+    position: absolute;
+    width: 17%;
+    max-height: 29rem;
+    margin-top: 4px;
+    margin-left: 36px;
+}
+#phone-photo2 {
+    display: flex;
+    position: absolute;
+    width: 17%;
+    max-height: 29rem;
+    margin-top: 4px;
+    margin-left: 36px;
+    opacity: 0;
+}
+
+#phone-photo1:hover {
+    opacity: 0;
+}
+
+#phone-photo2:hover {
+    opacity: 1;
 }
 
 .instagram-continue {

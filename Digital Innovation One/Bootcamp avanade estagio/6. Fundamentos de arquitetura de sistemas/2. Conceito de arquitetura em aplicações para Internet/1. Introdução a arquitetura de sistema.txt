@@ -1,0 +1,51 @@
+Tipos de Arquitetura
+
+Monolito
+    Pros: 
+        -Baixa complexidade
+        -Monitoramento simplificado
+
+    Contra:
+        -Stack unica
+        -Compartilhamento de recursos
+        -Acoplamento
+        -Mais complexo a escalabilidade
+
+Microserviços #1
+    Pros:
+        -Stack Dinamica
+        -Simples escalabilidade
+    
+    Contra:
+        -Acoplamento
+        -Monitoramento mais complexo
+        -Provisionamento mais complexo
+
+Microserviços #2
+    Pros:
+        -Stack Dinamica
+        -Simples escalabilidade
+        -Desacoplamento
+    Contra:
+        -Monitoramento mais complexo
+        -Provisionamento mais complexo
+
+Microserviços #3
+    Pros:
+        -Stack Dinamica
+        -Simples escalabilidade
+        -Desacoplamento
+        -Menor complexidade
+    Contra:
+        -Provisionamento mais complexo
+        -Plataforma inteira depende do gerenciador de pipeline
+
+Gerenciamento de erro  e volume de acesso
+
+Gerenciamento de erro
+    Onde é mais complexo:
+        -Processos assíncronos(Microserviços #2)
+        -pipeline
+    Solução:
+        -Dead letter queue
+        -Filas de re-tentativas 

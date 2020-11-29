@@ -15,13 +15,14 @@ public class Leilao {
 
 	public void propoe(Lance lance) {
 
-		if (lances.isEmpty() || !podeDaLanceUsuario(lance.getUsuario()) && quantidadeDeLanceDo(lance.getUsuario())<5) {
+		if (lances.isEmpty() || !podeDaLanceUsuario(lance.getUsuario()) && quantidadeDeLanceDo(lance.getUsuario())<5 
+				&& ultimoLanceDado().getValor() < lance.getValor()) {
 			this.lances.add(lance);
 		}
 	}
 
 	private boolean podeDaLanceUsuario(Usuario usuario) {
-		return ultimoLanceDado().getUsuario().equals(usuario);
+		return (ultimoLanceDado().getUsuario().equals(usuario));
 	}
 
 	private int quantidadeDeLanceDo(Usuario usuario) {

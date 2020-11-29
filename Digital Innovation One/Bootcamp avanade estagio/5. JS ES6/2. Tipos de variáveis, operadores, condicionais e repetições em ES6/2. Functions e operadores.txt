@@ -1,0 +1,58 @@
+Função
+    function fn(){
+        return 'Code here'
+    }
+
+    arrowFunction
+    const arrowFn() => 'Code here';
+    const arrowFn2() => {
+        mais que uma expressão
+        return 'Code here';
+    }
+
+    funções também são objetos
+    fn.prop = 'Posso declarar propriedades'
+    console.log(fn.prop)
+
+    Receber parâmetros
+
+    const logValue = value => console.log(value);
+
+    Receber e retornar funções
+
+    const controlFnExec => fnParam => allowed =>{
+        if(allowed){
+            fnParam();
+        }
+    }
+
+    const handleFnExcution = controlFnExec(fn);
+
+    handleFnExcution(true); Executará a Função
+    handleFnExcution(); Não Executará a Função
+
+    controlFnExec como Função
+    function controlFnExec(fnParam){
+        return function(allowed){
+            if(allowed){
+                fnParam();
+            }
+        }
+    }
+
+Operadores
+
+    Operador binario
+        operando1 operador operando2
+        1 + 2
+        12%5 resto de 12
+        2 ** 3 exponenciação
+        () agrupamento
+        +=,-=,*=,/= atribuiçoes
+        ==, < , < , <= , >= , !=  comparação
+        && , || lógico
+    O perador unário
+        operador operando1
+        operando1 operador
+            x++ incremento
+            --x decremento 

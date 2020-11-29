@@ -1,0 +1,34 @@
+O que é REST
+
+- REST -Representation State Transfer
+- É um estilo de arquitetura de software que define a implementação de um serviço web.
+- Podem trabalhar com os formatos XML,JSON ou outros.
+
+Vantagens em se utilizar REST
+
+- Permite integrações entre aplicações e também entre cliente e servidor em páginas web e aplicações.
+- Utiliza dos métodos HTTP para definir a operação que está sendo efetuada.
+- Arquitetura de fácil compreensão.
+
+O que é API
+
+- API -Application Programming Interface
+- São conjuntos de rotinas documentos e disponibilizados por uma aplicação para que as outras aplicações possam
+  consumir suas funcionalidades
+- Ficou popular com o aumento dos serviços web.
+- As maiores plataformas de tecnologia disponibilizam APIs para acessos de suas funcionalidades, algumas delas
+  são : Facebook, Twitter, Telegram , Whatsapp, GitHub.
+
+Entendendo os métodos utilizados pelo HTTP
+
+- GET - Solicita a representação de um recurso
+- POST - Solicita a criação de um recurso
+- DELETE - Solicita a exclusão de um recurso
+- PUT - Solicita a atualização de um recurso
+
+O que é JSON
+
+- JSON - JavaScript Object Notation
+- Formatação leve utilizada para trocar mensagens entre sistemas
+- Usa-se uma estrutura de chave e valor e tamabém de listas ordenadas
+- Um dos formatos mais populares e mais utilzados para troca de mensagens entre sistemas

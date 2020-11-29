@@ -1,0 +1,16 @@
+Criar um array
+    const array = [1,2,3]
+    const array = new Array(1,2,3)//mais de um parametro cria array com os parametros
+    const array = new Array(5)// um parametro cria um array de 5 posições
+    const array = Array.of(1,2,3)
+    Array.from // cria uma nova instancia de array a partir de um parâmetro array-like
+                ou iterable object
+    
+Inserir e remover elementos
+    push // adiciona um ou mais elementos no final do array e retorna o tamanho do novo Array
+    pop // remove o último elemento de um array e retorna o elemento removido
+    shift // remove o primeiro elemento e retorna o eleemnto removido
+    unshift // adiciona o primeiro elemento e retorna o tamanho do array
+    concat // merge nos arrays
+    slice(init, end) // fatia o array o end é excusivo e retorna o array fatiado
+    splice // altera um array adicionando novos elementos enquanto remove elementos antigos

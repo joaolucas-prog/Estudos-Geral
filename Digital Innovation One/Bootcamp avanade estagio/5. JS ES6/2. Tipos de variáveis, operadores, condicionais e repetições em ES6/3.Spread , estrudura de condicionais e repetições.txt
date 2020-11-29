@@ -1,0 +1,68 @@
+Spread ...
+  ele itera para cada item do array e passar como parametro
+
+  var partes = ['ombro','joelhos'];
+  var musica = ['cabeça', ...partes , 'e', 'pé']; --> equivalente a ['cabeça', 'ombro','joelhos' , 'e', 'pé']
+
+  function fn(x ,y ,z){}  
+  var args = [0,1,2];
+  fn(...args);
+
+Outros unários 
+    delete something //deleta algo
+    type something // tipo de algo
+
+Outros binários
+    in
+        something in somethingItems (não é igual ao pyton para interables)
+        Ex: 
+        var lista = ["um","dois","tres"]
+
+        1 in lista retorna true, pois existe o indice 1
+        "um" in lista retorna falso pois precisa falar o indice
+        "um" in lista[0] retorna true
+
+    instanceof
+        objeto instanceof tipoObjeto 
+
+Condicionais
+    if(valor lógico){} else {}
+
+    else if() {} caso o if não atender a consição  ele entra nesse if
+
+    Switch(arg){
+        case valor1:
+            console.log("faz algo")
+        case valor2:
+        default:
+            console.log("caso não tenha cases")
+
+    }
+
+Estruturas de repetição
+    for
+        for( let i=0; i<3; i++){
+            console.log(i);
+        }
+    while
+        while(i<3){
+            i++ 
+        }
+    do..while
+        do{
+            i++
+        }while(i<5)
+    for..in
+        let arr = [3 ,5 ,7];
+        arr.foo = "hello";
+        for (let i in arr){
+            console.log(i) // 3 ,5 ,7 ,foo
+        }
+
+        for (let i of arr){
+            console.log(i) // 3 ,5 ,7 
+        }
+    continue
+        pula a iteração
+    break
+        quebra o laço

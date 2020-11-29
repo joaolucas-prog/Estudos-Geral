@@ -1,0 +1,8 @@
+Código de estado
+
+- Usado para avisar o cliente sobre o estado da operação solicitada
+- 1xx - Informativo
+- 2xx - Sucesso
+- 3xx - Redirecionamento
+- 4xx - Erro do cliente
+- 5xx - Erro do servidor 

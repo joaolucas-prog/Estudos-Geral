@@ -1,0 +1,72 @@
+Definição
+    -Soluções generalistas para problemas recorrentes durante o
+    desenvolvimento de software. Não se trata de framework ou um código
+    pronto, mas de uma definição de alto nível de como um problema pode
+    ser solucionado.
+    -A pattern language
+        -1978  
+        -christopher alexander, sara ishikawa e murray silverstein
+        -253 tipos de problemas / desafios de projeção
+    -Formato de um pattern
+        -nome
+        -exemplo
+        -contexto
+        -problema
+        -solução 
+    
+Tipos
+    Padrões de criação
+            Os padrões de criação são aqueles que abstraem e/ou adiam o 
+            processo de criação dos objetos
+            exemplos:
+                Abstract factory
+                Builder
+                Factory Method
+                Prototype
+                Singleton
+    Padrões estruturais
+        Os padrões estruturais se preocupam com a forma como classes e
+        objeto são compostos para formar estruturas maiores.
+        exemplos:
+            Adapter
+            Bridge
+            Composite
+            Decorator
+            Facade
+            Business Delegade
+            Flyweight
+            proxy
+    Padrões comportamentais
+        se concentram nos algoritmos e atribuições de responsabilidades
+        entre os Objetos. Eles não descrevem apenas padrões de objetos
+        ou de classes, mas também os padrões de comunicação entre os
+        objetos.
+        exemplos:
+            Chain of Responsibility
+            Command
+            Interpreter
+            Itarator
+            Mediator
+            Observer
+            State
+            Strategy
+            Template Method
+            Visitor
+Mais utilizados
+
+    Factory
+        Todas as funções que retornam um objeto, sem a necessidade de 
+        chamá-las com o new, são consideradas funções Factory.
+    Singleton
+        O objetivo desse pattern é criar uma única instancia de uma função
+        contrutora e retorná-la toda vez que for necessária utilizá-la.
+    Decorator
+        uma função decorator recebe uma outra função como parâmetro e 
+        estende o seu comportamento sem modificá-la explicitamente.
+    Observer
+        É um pattern muito popular em aplicação JavaScript. A instância
+        (subscriber) mantém uma coleção de objetos(observers) e notifica
+        todos eles quando ocorrem mudanças no estado.
+    Module
+        Possibilita organizarmos o nosso código, sem a necessidade de expor
+        variáveis globais

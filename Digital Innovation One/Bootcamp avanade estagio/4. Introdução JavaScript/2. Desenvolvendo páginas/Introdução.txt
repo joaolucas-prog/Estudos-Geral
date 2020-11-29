@@ -1,0 +1,12 @@
+JavaScript 
+
+-Linguagem de script e multiplataforma
+-Cliete Side : É executado do lado do cliente (usuário)
+-Tem capacidade de interagir com elementos de uma página html
+-Muito usado no desenvolvimento de páginas e aplicativos mobiles hibridos.
+
+DOM ( Document Object Model)
+
+-Modelo de árvore
+-JavaScript popde alterar todos elementos HTML
+-JavaScript pode alterar todos os atributos e estilos de CSS de uma página

@@ -1,0 +1,21 @@
+Oque são serviços Web
+
+-São soluções para aplicações se comunicarem independente de linguagem, softwares e hardwares utilizados
+-Inicialmente Serviços Web  foram criados para troca de mensagens utilizando a linguagem XML (Extensible Markup
+Language) sobre o protocolo http sendo identificado por URI(Uniform Resource Identifer)
+-Podemos dizer que web services são API's que se comunicam por meio de redes sobre o protocolo http
+
+As vantagens de se utilizar serviços Web
+
+-linguagem comun
+-Integração
+-Reutilização de implementação
+-Segurança
+-Custos
+
+Tecnologias mais utilizadas para desenvolvimento de serviços web
+
+-SOAP
+-REST
+-XML
+-JSON

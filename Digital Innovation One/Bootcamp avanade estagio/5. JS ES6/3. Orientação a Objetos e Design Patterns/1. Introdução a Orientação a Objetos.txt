@@ -1,0 +1,19 @@
+Herança
+
+    -baseadas em prototipos
+    -prototype
+    -__proto__
+    -constructor
+    
+Classes
+
+    -ES6
+    -simplificação da herança de protótipos
+    -palavra chave class
+Modificadores de acesso
+    -privado/publico
+Encapsulamento
+    -ocultar detalhes do funcionamento interno
+    
+Static
+    -acessar elementos da classe sem instanciar a classe

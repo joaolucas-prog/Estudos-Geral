@@ -1,0 +1,31 @@
+Oque é um SOAP
+
+- SOAP - Simple Object Access Protocol
+- É um protocolo baseado em xml para acessar serviços web principalmente por HTTP
+- Pode-se dizer que o SOAP é uma definição de como serviçoes web se comunicam
+- Foi desenvolvido para facilitar integrações entre aplicações
+
+Vantagens em utilizar SOAP
+
+- Permite integrações entre aplicações, idependente da linguagem pois usa como linguagem comun o XML.
+- É independente de plataforma e software
+- Meio de transporte genérico , ou seja, pode ser usado por outros protocolos além do HTTP 
+
+Oque é XML
+
+- XML - Extensible Markup Language
+- É uma linguagem de marcação criada na decada de 90 pela W3C
+- Facilita separação de conteúdo
+- Não tem limitação de criação de tags
+- Linguagem comum para integrações entre aplicações
+
+Entender a estrutura de uma mensagem SOAP
+
+-O SOAP Message possui uma estrutura única que deve  sempre ser seguida:
+    *SOAP Envelop (tag pai)
+        é o primeiro elementodo documento e é usado para encapsular toda a mensagem SOAP
+    *SOAP Header (tag filha da Envelop0
+        é o elemento onde possui informações de atributos e metadados da requisição
+    *SOAP body (tag filha da Envelop)
+        é o elemento que contém os detalhes da mensagem
+        

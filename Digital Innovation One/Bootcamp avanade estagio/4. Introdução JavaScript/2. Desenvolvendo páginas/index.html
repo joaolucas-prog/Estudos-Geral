@@ -1,0 +1,25 @@
+<!--
+  Podemos criar comandos JavaScripe com a tag script no body  ou criando arquivos externos que é oque 
+  vamos utilizar
+-->
+
+<!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+  </head>
+  <body>
+    <button type="button" onclick="clicou()">Botão</button>
+    <h3 id ="h3"></h3>
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse</p>
+    <select onchange="change(this)">
+      <option value="1">Valor 1</option>
+      <option value="2">Valor 2</option>
+      <option value="3">Valor 3</option>
+    </select>
+    <script src="./js/js.js"></script>
+
+  </body>
+</html>

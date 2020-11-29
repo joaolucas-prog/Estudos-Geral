@@ -1,0 +1,18 @@
+Tipos de Variáveis
+    -var ( não respeita o escopo de bloco, é como se ele quando declarado se tornasse global)
+    -let ( respeita o escopo de bloco)
+    -const :
+        (respeita o escopo de bloco)
+        serve para criar constantes, mas caso seja um objeto eu posso alterar seus valores, mas não
+        suas referências.
+        Ex: const Pessoa , consigo alterar o atributo nome , mão não o objeto Pessoa.
+
+Escopo
+//escopo global
+{
+    //escopo de bloco
+}
+
+function fun(){
+    //escopo de função
+}

@@ -1,0 +1,30 @@
+JavaScrip
+
+-Laçado em setembro de 1995
+-Criado por Bredan Eich
+
+ECMAScript
+-TC39 comite responsável pela manutenção do JavaScrip
+
+Fluxo de proposta
+    -Stage 0: strawman
+    -Stage 1: proposal
+    -Stage 2: draft
+    -Stage 3: candidate
+
+JavaScrip
+-Linguagem interpretada
+-Tipagem fraca e dinamica
+
+TypeSciprt
+-Superset da Linguagem JavaScrip(além do JS ele adiciona funcionalidades)
+-www.typescriptlang.org
+Flow
+-flow.org/en/
+
+Funções de primeira classe e ordem maior
+    significa dizer que a função pode ser atribuida a uma variável , a um object (ex array) , 
+    podem ser passadas como argumentos e ser retorno de função
+
+Cloujure
+    função lembra onde ela foi criada

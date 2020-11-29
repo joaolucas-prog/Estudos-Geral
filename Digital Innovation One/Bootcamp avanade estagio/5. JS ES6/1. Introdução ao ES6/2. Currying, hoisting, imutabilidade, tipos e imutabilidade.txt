@@ -1,0 +1,40 @@
+Currying
+    -Tecnica de transformar uma função que recebe n parametros em apenas um parâmetro , e para cada parâmetro 
+    retorna uma função
+
+    ex:
+
+    function soma(a){
+        return function(b){
+            return a+b
+        }
+    }
+
+    const soma2 = soma(2)
+    soma2(2);
+    soma2(3);
+    soma2(4);
+
+Hoisting
+    -Significa lenvantar ou suspender algo, o que significa isso em termos de JS, as declarações de variaveis
+    ou escopos são elevadas ao escopo que ela está. então ela funciona mesmo se tiver sido criada depois.
+
+    ex:
+    function fn(){
+        //hoisting de variável
+        console.log(text)
+        var text = 'Exemplo'
+        console.log(text)
+    }
+
+    fn();
+
+    function fn(){
+        //hoisting de função
+        function log(value){
+            console.log(value)
+        }
+    }
+    fn();
+
+Imutabilidade

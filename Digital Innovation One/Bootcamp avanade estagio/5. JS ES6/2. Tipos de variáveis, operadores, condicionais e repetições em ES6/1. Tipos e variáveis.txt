@@ -1,0 +1,32 @@
+Tipos e Variáveis
+    -string
+    -number
+    -boolean
+    -null
+    -undefined
+    -symbol
+    -Object
+    -Function
+    -Array
+
+string funções
+    .lenght//tamanho
+    .split('x').//separa
+    .replace('x')//substitui
+    .slice(i,j)//fatia , i inicio j final
+    .substring(i,j)//i inicio j tamanho
+
+funções number
+    .toString()//transforma em string
+    .tofixed(2)//casas decimais
+    .parseFloat(i)//transforma em float
+    .parseInt(i)// transforma em int
+
+Null
+
+Object funções
+    .keys(object) // propriedades do objeto
+    .values(object) // valores das propriedades do objeto
+    .entries(objeto) // lista de propriedades e valores
+    Object.assign(object , fullName: 'nome completo')//merge de propriedades do objeto
+    Object.seal(object) //permite mudar propriedades mas não deletar nem criar

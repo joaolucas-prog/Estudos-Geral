@@ -32,8 +32,9 @@ public class Avaliador {
 				return 1;
 			if (lance1.getValor() > lance2.getValor())
 				return -1;
-			return 0;
-		}).collect(Collectors.toList()).subList(0, maiores.size() > 3 ? 3 : maiores.size());// usando produto ternario
+			return 0;})
+				.collect(Collectors.toList())
+				.subList(0, maiores.size() > 3 ? 3 : maiores.size());// usando produto ternario
 
 	}
 

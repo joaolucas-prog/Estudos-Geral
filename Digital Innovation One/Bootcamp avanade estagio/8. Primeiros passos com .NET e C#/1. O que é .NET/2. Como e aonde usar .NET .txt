@@ -1,0 +1,18 @@
+Como?
+    Cada implementação inclui uma ou mais .NET Runtimes
+        .NET CORE : Core CLR e CoreRT
+        .NET Framework CLR
+        Mono Mono Runtime
+        UWP .NET Native
+    Atualmente a Microsoft desenvolve e suporta 3 linguagens para .NET
+        C#
+        F#
+        VB
+Onde ?
+    Desktop
+    web
+    cloud
+    mobile
+    gaming
+    iot
+    AI

@@ -1,0 +1,108 @@
+Anos 70
+    Microsoft iniciou nos anos 70 criando linguagens de programação : Basic
+
+Anons 80
+    Anos 80, surge o DOS, que foi utilizado com OS padrão para computadores IBM
+    nos proximos anos foi criando OS window
+
+1997
+    No fim dos anos 90, a Microsoft tentou consolidar as ferramentas de desenvolvimento (IDEs e
+    runtimes) com o Visual Studio 97:
+        Visual Basic 5
+        Visual FoxPro 5
+        C++ 5
+        J++(copia barata do Java falo msm)
+
+1998
+    Visual Basic 6
+    Visual FoxPro 6
+    C++ 6
+    J++ 6
+
+1999
+    Scott Guthrie criou uma ferramenta web com Java, e a chamou de ASP+( depois chamou de ASP Next
+    e depois ASPX)
+
+    Jason Zander ajudou na criação de um common runtime para VB e C++(CLR)
+
+    JAva ia bem Então a Sun Microsystems fez um acordo para a Microsoft não mexer mais com Java
+    Com isso Anders Hejlsberg começou a trabalhar no C#
+
+2000
+    Microsoft lança o novo ambiente de desenvolvimento .NET 1.0 inicialmente chamado de Next Generation
+    Windows Services
+
+2001
+    Miguel de Icaza começa a trabalhar no projeto Mono, uma reimplementação black box do .NET open
+    source e multiplataforma
+
+2002
+    Lançamento do Visual Studio .NET com C# 1.0
+    Conhecido como 22 linguagens , 1 plataforma:
+    C# .NET
+    C++ .NET
+    VB.NET
+    j#.NET
+    Entre outros
+
+2003
+    Lançamento do .NET 1.1 com o Visual Studio 2003
+    Trabalham em melhorias na CLR para lançar a CLR 2
+
+2005    
+    Lançamento do .NET 2.0 com C# 2.0 no Visual Studio 2005
+    Microsoft começa a atingir seu objetivo inicial, inclusive evoluindo na web
+
+2007-2008
+    Lançamento do .NET 3.5 com C# 3.0 no Visual Studio 2008, com SilverLight , WPF e WCF
+    Microsoft contrata um time de pessoas que tinham uma pegada open source e começam a atuar na
+    criação do ASP.NET MVC
+    Começa a se falar em Windows Azure
+
+2010
+    Lançamento do .NET 4 com C# 4 no VS 2010 também com F#
+    Microsoft lança comercialmente Windows Azure
+    Anders Hejlsberg começa a trablhar no typescript
+
+2011
+    Miguel de Icaza inicia Xamarin basicamente ele densenvolvia em C# aplicativos que rodam em 
+    Android e IOS
+
+2012
+    .net 4.5 com C#5 no VS 2012
+    Lançamento do typescript
+
+2013
+    Lançamento do .net 4.5 no VS 2013
+    Inicio do Roslyn um novo compilador para C# e VB.NET
+    Microsoft continua atuando mais na frente JS e aumenta também a incorporação de ferramentas 
+    open source ao ambiente
+    Já temos aqui o ASP.NET mais consolidado com MVC WEB API e SignalR
+
+2014
+    Satya Nadella se torna CEO da Microsoft e direciona o foco da empresa para cloud
+    Crianção do .NET Foundation para gestão de projetos open soucer
+    Windows Azure passa a se chamar Microsoft Azure
+    é introduzido o conceito do ASP.NET vNext posteriormente chamdo ASP.NET core
+
+2015 
+    VS Code 
+    .NET 4.6 com C# no VS 2015
+
+2016
+    Microsoft adquire a Xamarin e adiciona o produto como parte de sua stack .NET e projetos
+    open source
+    Lançamento do VS for MAC
+    Lançamento .NET Core 1.0 totalmente novo, open source e multiplataforma
+
+2017
+    .NET Framework 4.7 com C# 7 no VS 2017
+    .NET Core 2.0 com C# 7 no VS 2017 VS code e VS for Mac
+
+2019
+    .NET Framework 4.8 com C# 7.3 VS 2019
+    .NET core 3.0 com C# 8 no VS VS Code e VS for Mac
+
+2020
+    .NET Framework está pronto na versão 4.8
+    E deixa de ser evoluido junto com ele WCF e ASP.NET Webforms

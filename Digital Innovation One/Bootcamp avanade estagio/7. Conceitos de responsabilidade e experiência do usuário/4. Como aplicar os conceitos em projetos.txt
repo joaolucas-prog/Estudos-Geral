@@ -1,0 +1,26 @@
+Responsividade
+    Através da responsividade de um site , que deve levar em conta a usabilidade, ou seja, ter um site
+    realmente adaptado para que pessoas consigam acessar e navegar nele com tranquilidade usando apenas
+    uma mão, uma empresa pode oferecer para seu cliente:
+	-Facilidade e Conforto de acessso
+	-Boa Experiência de uso
+	-Satisfação do usuário
+	-Fidelidade do usuário
+	Ferramentas : google resize ,window resize
+
+Acessibilidade
+    Empatia e Inclusão - quando falamos em desenvolver um produto, o foco principal durante o desenvolvimento
+    dele são seus usuários, as pessoas que vão utilizar o sistema com mais frequência. Por esse motivo
+    fazemos, pesquisas com essas pessoas para saber suas dificuldades e receios com relação a tarefa que
+    vai ser executada utilizando o produto. Nessas pesquisas, procuramos entender as tarefas feitas por
+    elas nos colando em seus lugares e por isso a empatia é tão importante.
+
+Prototipagem
+    A prototipagem é util, por exemplo , quando é necessário melhorar a experiência dos usuários(UX)
+    , atualizar modelos de negóciose criar novos produtos ou serviços. Em um projeto de longa duração,
+    pode ser refeita ao longo do processo. Depois dos testes, é possível que seja necessário reenquadrar
+    os protótipos e retestá-las
+
+Fidelidade do protótipo
+    um protótipo pode ser desdeuma representação conceitual ou análoga da sulução, passando por aspectos
+    da ideia, até a construção de algo mais próximo possível da solução final.

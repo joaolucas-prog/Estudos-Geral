@@ -1,0 +1,34 @@
+O que é C#
+    C# é uma linguagem elegante, orientada a objetos e fortemente tipada
+    A sitaxe do C# é similar a do C, C++ ou Java
+    Suporta os conceitos de encapsulamento, herança e polimorfismo(OO)
+    Atualmente o compilador do C# é o Roslyn
+
+Como funciona
+    Quando o programa C# é executado, o assembly é carregado no CLR
+    Em seguida o CLR executará a compilação just in time (JiT) para converter em instruções de maquina nativas
+
+Outros serviços do CLR
+    -Garbage Collector
+    -Exception Handler
+    -Resources Manager
+
+Estrutura de programa
+    Os principais conceitos organizacionais em C# são:
+        -programas
+        -namespaces
+        -tipos
+        -membros
+        -assemblies
+    
+    Programas em C# consistem em um ou mais arquivos
+    
+    Os programas declaram tipos, que contêm membros e podem ser organizados em namespaces
+    
+    Classes e interfaces são exemplos de tipos
+    
+    Campos, métodos, propriedades e eventos são exemplos de membros.
+    
+    Quando os programas C# são compilados, eles são fisicamente empacotados em assemblies
+
+    Os assemblies geralmente têm a extensão de arquivo .exe ou .dll, dependendo se são aplicações ou bibliotecas

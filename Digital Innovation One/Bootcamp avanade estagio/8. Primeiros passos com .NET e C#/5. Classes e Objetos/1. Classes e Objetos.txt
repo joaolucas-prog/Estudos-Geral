@@ -1,0 +1,35 @@
+Classes são os tipos mais fundamentais de C#
+Uma classe é uma estrutura de dados que combina estado(campos) e ações(metodos).
+ex:
+    public class Ponto{
+        public int x,y;
+        public Ponto(int x, int y){//construtor
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+Instancias
+    instâncias de classes(objetos) são criadas usando o operador new, que aloca memória para uma nova instância,
+    chama um construtor para inicializar a instância e retorna uma referência a instância
+
+Membros
+    Os membros de uma classe podem ser estáticos ou membros da instância
+
+    Membros estáticos pertecem a classe e membros da instância pertecem ao objeto.
+
+    Constantes, variáveis, métodos, propriedades, construtores, etc..
+
+Acessibilidade
+    Cada membro de uma classe tem uma acessibilidade associada, que controla as regiões do texto do programa
+    que podem acessar o membro.
+    Podem ser:
+        -public
+        -protected
+        -internal
+        -private
+
+Herança
+    Uma declaração de classe pode espeficar uma classe base, herdando os membros public, internal e protected da
+    classe base.
+    Omitir uma especificação de classe base é o mesmo que derivar o tipo object.

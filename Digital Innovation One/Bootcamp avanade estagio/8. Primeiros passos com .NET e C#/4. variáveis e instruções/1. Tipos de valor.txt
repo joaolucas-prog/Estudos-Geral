@@ -1,0 +1,78 @@
+Vairáveis de tipo de valor contêm diretamente seus dados
+
+Variáveis têm sua própria cópia dos dados e não é possível que operações afetem outra variável(exceto no caso de
+Variáveis de parâmetro ref e out)
+
+Numéricos: sbyte, short, int, long, byte, ushort, uint, ulong.
+
+Caracteres Unicode: char
+
+Pontos Flutuantes: float, double, decimal
+
+Booleano: bool
+
+enum, struct e tipos nullable 
+
+Tipos de referência
+    Variáveis de tipos de referência armazena referências a seus dados
+    É possível que duas variáveis falam referência ao memso objeto e, portanto, que operações em uma variável
+    afetem o objeto referenciado pela outra variável.
+
+Tipos Classe: class, object, string
+
+Tipo Arrays: int[],int[,], etc...
+
+interface, delegate
+
+Instruções
+    Ações de um programa são expressas usando Instruções
+    {
+        Um bloco permite que as Instruções sejam escritas em contextos.
+    }
+    -Declarações de variáveis e constantes locais
+        int a
+        string b
+    -if 
+        if(condição){..}
+        else{..}
+    -switch
+        switch(condição){
+            case condição:
+                ...
+                break,return,continue
+            default:
+                ..
+        }
+    -while
+        while(condição){..}
+    -do 
+        do{
+            ...
+        }while(condição)
+    -for
+        for(contador;condição;incremento){...}
+    -foreach
+        string args = []
+        foreach(string s in args){..}
+    -break
+        sai o bloco de repetição
+    -continue
+        pula um bloco de repetição
+    -return
+        devolve algum valor
+    -throw
+        lança um exception
+    -try..catch..finally 
+        tratamento de exception
+        try{..} tenta executar o bloco de comando
+        catch(Exception){..}se acontecer o excpetion passado, irá fazer este bloco
+        finally{..} o finally é sempre executado    
+    -using 
+        elemina um objeto da memoria , muito usado nos IO
+        using(IO){..}
+
+Array
+    Ao criar um array, é especificado o tamanho da nova instância,que é fixo durante todo o tempo de vida da 
+    instância
+    Os indices dos elementos de um array variam de 0 a comprimento do array-1
+        

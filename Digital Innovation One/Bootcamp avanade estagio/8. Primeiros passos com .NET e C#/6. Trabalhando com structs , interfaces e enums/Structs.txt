@@ -1,0 +1,14 @@
+Structs
+    Como as classes, as Structs são estruturas de dados que podem conter membros de dados e membros de ação, mas,
+    diferente das classes, as Structs são tipo de valor e não requerem alocação de heap
+    
+    Uma variável de um tipo struct armazena diretamente os dados da estrutura, enquanto uma variável de um tipo
+    de classe armazena uma referência a um objeto alocado na memória.
+
+    Structs não aceitam herança determinada pelo desenvolvedor
+
+    São úteis para pequenas estruturas de dados, que possuem semântica de valor: números complexos, pontos em
+    um sistema de coordenadas ou pares de chave-valor em um dicionário são bons exemplos de utilização.
+
+    O uso de strutcs em vez de classes para pequenas estruturas de dados pode fazer uma grande diferença no 
+    número de alocações de memória.

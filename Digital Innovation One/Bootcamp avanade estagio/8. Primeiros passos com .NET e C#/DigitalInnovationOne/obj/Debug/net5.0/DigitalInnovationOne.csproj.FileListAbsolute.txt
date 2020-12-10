@@ -1,0 +1,16 @@
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.exe
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.deps.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.runtimeconfig.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.runtimeconfig.dev.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\ref\DigitalInnovationOne.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\bin\Debug\net5.0\DigitalInnovationOne.pdb
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.csprojAssemblyReference.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.AssemblyInfoInputs.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.AssemblyInfo.cs
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.csproj.CoreCompileInputs.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\ref\DigitalInnovationOne.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.pdb
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\DigitalInnovationOne\obj\Debug\net5.0\DigitalInnovationOne.genruntimeconfig.cache

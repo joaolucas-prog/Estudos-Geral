@@ -1,0 +1,23 @@
+dotnet --help
+    mostra os comandos possiveis no .net
+
+Criando uma aplicação console
+    dotnet new console -n nome_projeto
+
+Para saber como criar outras aplicações 
+    dotnet new -h
+
+dotnet restore
+    restaura os pacotes de dependência do projeto // .csproj
+
+dotnet build
+    restaura os pacotes e compilar o código fonte para gerar as DLL's
+
+dotnet run
+    irá fazer a restauração de pacotes, irá transformar o código fonte em binários e irá executar o código
+    da class Program do método main
+
+dotnet build <path>
+    irá executar o build do projeto dentro da path.
+dotnet run -p <path>
+    irá executar o run do projeto que passado no path.

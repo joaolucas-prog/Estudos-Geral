@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\joao_\\Desktop\\Estudos\\Estudos-Geral\\Digital Innovation One\\Bootcamp avanade estagio\\8. Primeiros passos com .NET e C#\\DigitalInnovationOne\\DigitalInnovationOne.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\joao_\\Desktop\\Estudos\\Estudos-Geral\\Digital Innovation One\\Bootcamp avanade estagio\\8. Primeiros passos com .NET e C#\\DigitalInnovationOne\\DigitalInnovationOne.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\joao_\\Desktop\\Estudos\\Estudos-Geral\\Digital Innovation One\\Bootcamp avanade estagio\\8. Primeiros passos com .NET e C#\\DigitalInnovationOne\\DigitalInnovationOne.csproj",
+        "projectName": "DigitalInnovationOne",
+        "projectPath": "C:\\Users\\joao_\\Desktop\\Estudos\\Estudos-Geral\\Digital Innovation One\\Bootcamp avanade estagio\\8. Primeiros passos com .NET e C#\\DigitalInnovationOne\\DigitalInnovationOne.csproj",
+        "packagesPath": "C:\\Users\\joao_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joao_\\Desktop\\Estudos\\Estudos-Geral\\Digital Innovation One\\Bootcamp avanade estagio\\8. Primeiros passos com .NET e C#\\DigitalInnovationOne\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\joao_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.csprojAssemblyReference.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.AssemblyInfoInputs.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.AssemblyInfo.cs
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.csproj.CoreCompileInputs.cache
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.exe
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.deps.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.runtimeconfig.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.runtimeconfig.dev.json
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\ref\Revisão.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\bin\Debug\net5.0\Revisão.pdb
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\ref\Revisão.dll
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.pdb
+C:\Users\joao_\Desktop\Estudos\Estudos-Geral\Digital Innovation One\Bootcamp avanade estagio\8. Primeiros passos com .NET e C#\Revisão\obj\Debug\net5.0\Revisão.genruntimeconfig.cache

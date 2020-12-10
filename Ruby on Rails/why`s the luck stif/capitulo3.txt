@@ -1,0 +1,252 @@
+Variáveis
+Qualquer palavra simples, em minúsculas, é uma variável no Ruby. Variáveis podem ser compostas por letras, 
+dígitos e travessões.
+x, y, banana2 ou telefone_para_codorna são exemplos.
+
+----------------------------------------------------------------------------------------------------------------#
+
+Números
+O tipo mais básico de número é um integer (número inteiro), uma série de dígitos que podem começar com um 
+sinal de menos ou de mais.
+
+1, 23 e -10000 são exemplos.
+
+Vírgulas não são permitidas em números, mas travessões sim. Então se você acha melhor marcar os milhares 
+para que o número fique mais legível, use um travessão.
+
+habitantes = 12_000_000_000
+
+Números decimais são chamados de floats (números reais ou ponto flutuante) no Ruby. Números reais consistem 
+em números com casas decimais ou em notação científica.
+3.14, -808.08 e 12.043e-04 são exemplos.
+----------------------------------------------------------------------------------------------------------------#
+
+Strings (Conjunto de Caracteres)
+Strings são quaisquer tipos de caracteres (letras, dígitos, pontuação) cercados por aspas. 
+Aspas, simples ou duplas, são usadas para se criar strings.
+
+"laboratoriodomar", '2021' ou "Estes quadrinhos são hilários!" são exemplos.
+
+Quando você cerca caracteres em aspas, eles ficam guardados juntos como uma string só.
+
+Symbols (Símbolos)
+Símbolos são palavras que parecem variáveis. Novamente, elas podem conter letras, dígitos e travessões. 
+Mas elas começam com dois pontos.
+
+:a, :b, ou :ponce_de_leon são exemplos.
+
+Símbolos são strings leves. Geralmente, símbolos são usados em situações em que você precisa de uma 
+string mas não vai imprimi-la na tela.
+----------------------------------------------------------------------------------------------------------------#
+
+Constantes
+Constantes são palavras como variáveis, mas constantes são maiúsculas. Se variáveis são os substantivos do Ruby, 
+então pense nas constantes como substantivos próprios.
+
+Time, Array ou Bunny_Lake_Desapareceu são exemplos.
+
+constantes não podem ser alteradas depois de criadas.
+
+EdificioEmpireState = "350 5th Avenue, NYC, NY"
+    
+Se tentarmos mudar a constante, Ruby vai reclamar com a gente.
+----------------------------------------------------------------------------------------------------------------#
+
+Métodos
+Se variáveis e constantes são substantivos, então métodos são verbos. Métodos geralmente estão ligados ao 
+final das variáveis e constantes por um ponto. Você já viu métodos trabalhando.
+
+porta_da_frente.abra
+
+Acima, abra é o método. Nesta ação, o verbo. Em alguns casos, você verá ações ligadas juntas.
+
+porta_da_frente.abra.feche
+
+Instruímos o computador a abrir a porta da frente e depois imediatamente fechá-la.
+
+porta_da_frente.esta_aberta?
+
+Acima temos uma ação também. Estamos instruindo o computador a testar a porta para ver se está aberta. 
+O método poderia se chamar Porta.teste_para_ver_se_esta_aberta, mas o nome esta_aberta? é sucinto e também 
+correto. Exclamações e interrogações podem ser usados em nomes de métodos.
+----------------------------------------------------------------------------------------------------------------#
+
+Argumentos de Método
+Um método talvez precise de mais informação para realizar sua ação. Se quisermos que o computador pinte a porta, 
+devemos prover uma cor também.
+
+Argumentos de método vão ligados ao final do método. Os argumentos estão geralmente cercados por parênteses e 
+separados por vírgulas.
+
+porta_da_frente.pintar( 3, :vermelho )
+
+O código acima pinta a porta da frente com três demãos de vermelho.
+
+Pense nisso como um tubo interno que o método carrega, contendo suas instruções extras. Os parênteses formam as 
+redondas e molhadas paredes do tubo. As vírgulas são os pés de cada argumento, saindo para fora da beirada. 
+O último argumento tem o pé preso embaixo então eles não aparecem.
+
+Como um barco de bóias, métodos com argumentos podem ser ligados.
+
+porta_da_frente.pintar( 3, :vermelho ).secar( 30 ).fechar()
+
+O código acima pinta a porta da frente com três demãos de vermelho, seca por trinta minutos e fecha a porta. 
+Mesmo que o último método não tenha argumentos, você pode colocar parênteses se quiser. Um cano vazio não tem 
+muito uso, então os parênteses são geralmente deixados de lado.
+
+Alguns métodos (como print) são métodos do kernel. Estes métodos são usados por todo Ruby. Já que eles são tão 
+comuns, você não usa o ponto.
+
+print "Veja, sem ponto."
+----------------------------------------------------------------------------------------------------------------#
+
+Métodos de Classe
+Assim como os métodos descritos acima (também chamados métodos de instância), métodos de classe são geralmente 
+ligados depois de variáveis e constantes. Ao invés de ponto, usa-se dois pontos duplo.
+
+Porta::new( :carvalho )
+Como foi visto acima, o método de classe new é mais usado para se criar coisas. No exemplo cima, estamos pedindo 
+ao Ruby para fazer uma porta de carvalho nova para nós.
+----------------------------------------------------------------------------------------------------------------#
+
+Variáveis Globais
+Variáveis que começam com um cifrão são globais.
+
+$x, $1, $pedacudo e $BAcOn_PeDAcUDo são exemplos.
+
+Variáveis globais podem ser usadas em qualquer lugar no seu programa. Elas nunca saem da vista.
+----------------------------------------------------------------------------------------------------------------#
+
+Variáveis de Instância
+Variáveis que começam com uma arroba são variáveis de instância.
+
+@x, @y, e @somente_o_maior_pedaco_de_bacon_que_eu_ja_vi são exemplos.
+
+Estas variáveis são muito usadas para se definir atributos de alguma coisa. Por exemplo, você pode prover o 
+Ruby com a largura da porta_da_frente criando a variável @largura dentro daquela porta_da_frente. 
+Variáveis de instância são usadas para se definir características de um objeto em Ruby.
+
+Pense no símbolo arroba (at) como significando atributo.
+----------------------------------------------------------------------------------------------------------------#
+
+Variáveis de Classe
+Variáveis que começam com duas arrobas são variáveis de classe.
+
+@@@x@, @@@y@, e @@@vou_pegar_seus_bacons_pedacudos_e_ensinar_uma_licao_a_voces_dois@ são exemplos.
+
+Variáveis de classe são usadas, também, para se definir atributos. Mas ao invés de definir um atributo a apenas 
+um objeto no Ruby, variáveis de classe dão um atributo a vários objetos relacionados no Ruby. Se as variáveis de 
+instância estipulam atributos para só uma porta_da_frente, então variáveis de classe estipulam atributos para tudo 
+que for Porta.
+
+Pense no prefixo da dupla arroba significando atribua a todos. Adicionalmente, você pode pensar em um esquadrão de 
+AT-ATs do Guerra nas Estrelas, que são comandados pelo Ruby. Você muda uma variável de classe e não apenas uma 
+muda, todas elas mudam.
+
+----------------------------------------------------------------------------------------------------------------#
+
+Blocos
+Qualquer código cercado por chaves é um bloco.
+
+2.times { print "Sim, Tenho usado bacon pedaçudo nos meus exemplos, mas não farei de novo!" } é um exemplo.
+
+Com blocos, você pode agrupar pedaços de instruções juntas, assim elas pode ser passadas pelo seu programa. 
+As chaves dão a aparência de garras de caranguejo que pegaram o código e o estão segurando. Quando você vir essas 
+duas garras, lembre-se de que o código dentro foi prensado em uma só unidade.
+
+As chaves podem ser substituídas pelas palavras do e end, o que é bacana se seu bloco for maior que uma linha.
+
+ loop do
+   print "Bem melhor."
+   print "Ah.  Mais espaço!"
+   print "Minhas costas estavam me matando dentro daquelas garras de caranguejo."
+ end
+----------------------------------------------------------------------------------------------------------------#
+
+Argumentos de Bloco
+Argumentos de bloco são uma série de variáveis cercadas por símbolos tal que e separadas por vírgulas.
+
+|en||x|, |x,y|, e |cima, baixo, todo_lado| são exemplos.
+
+Argumentos de bloco são usados no início do bloco.
+
+{ |x,y| x + y }
+
+No código acima, |x,y| são os argumentos. Depois dos argumentos, temos um pedaço de código. A expressão x + y 
+soma os argumentos.
+----------------------------------------------------------------------------------------------------------------#
+
+Ranges (Intervalos)
+Um range é formado por dois valores cercados por parênteses e separados por reticências (na forma de dois ou três 
+pontos).
+
+(1..3) é um range, representando os números de um até três.
+
+('a'..'z') é um range, representando o alfabeto em minúsculas.
+Normalmente, apenas dois pontos são usados. Se um terceiro ponto for usado, o último valor no range será excluído.
+
+(0...5) representa os números de zero até quatro.
+----------------------------------------------------------------------------------------------------------------#
+
+Arrays (Conjuntos, Vetores)
+Um array é uma lista cercada por colchetes e separada por vírgulas.
+
+[1, 2, 3] é um array de números.
+
+['casaco', 'luvas', 'snowboard'] é um array de strings.
+Sim, um array é uma coleção de coisas, mas ele também mantém estas coisas em uma ordem específica.
+----------------------------------------------------------------------------------------------------------------#
+
+Hashes
+Um hash é um dicionário cercado por chaves. Dicionários servem para encontrar definições das palavras. O Ruby faz isso com setas feitas de sinais de igual, seguida por um sinal de maior que.
+
+{'a' => 'porco-da-terra', 'b' => 'texugo'} é um exemplo.
+
+ {
+   'nome' => 'Peter',
+   'profissao' => 'domador de leões',
+   'grande apreco' => 'flanela'
+ }
+
+ Diferentemente dos arrays, os itens na hash não são mantidos em ordem específica.
+----------------------------------------------------------------------------------------------------------------#
+
+Expressões Regulares
+Uma expressão regular (ou regexp) é uma série de caracteres cercados por barras.
+
+/ruby/, /[0-9]+/ e /^\d{3}-\d{3}-\d{4}/ são exemplos.
+
+Expressões regulares são usadas para se achar palavras ou padrões no texto. 
+----------------------------------------------------------------------------------------------------------------#
+
+Operadores
+Você usará a seguinte lista de operadores para matemática ou para comparar coisas no Ruby. Analise a lista, 
+reconheça alguns. Você conhece, adição + e subtração - e por aí vai.
+
+  ** !  ~  *  /  %  +  -  &  
+  << >> |  ^  >  >= <  <= <=>
+  || != =~ !~ && += -= == ===
+  .. ... not and or          
+----------------------------------------------------------------------------------------------------------------#
+
+Keywords (Palavras-chave, Palavras-reservadas)
+O Ruby tem um número de palavras embutidas, imbuídas em significado. Estas palavras não podem ser usadas como 
+variáveis ou modificadas às suas necessidades. Algumas delas nós já discutimos. Elas estão na caixa forte, 
+meu amigo. É só relar nelas e você terá um erro oficial de sintaxe.
+
+  alias   and     BEGIN   begin   break   case    class   def     defined 
+  do      else    elsif   END     end     ensure  false   for     if 
+  in      module  next    nil     not     or      redo    rescue  retry 
+  return  self    super   then    true    undef   unless  until   when 
+  while   yield 
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#
+----------------------------------------------------------------------------------------------------------------#

@@ -1,0 +1,86 @@
+Padrão MVC
+    O MVC é um padrão de arquitetura que divide a aplicação em três camadas : a visão(view) a aplicação
+    (model) e o controlador(controller)
+    O MVC é um padrão muito utilizado devido a sua arquitetura que possibilita separar o projeto em
+    camadas onde cada uma delas executa o que lhe é definido e nada mais.
+    Esse padrão pode ser aplicado em diversos tipos de projetos como, por exemplo, desktop, web e mobile.
+    O MVC traz com o benefício o isolamento das tregas de negócios da interface do usuário , o que permite
+    que exista várias interfaces de usuários que podem ser modificados sem afetar a regra do negócio.
+Camada Model
+    É a camada responsável pela leitura e escrita de dados, e também de duas validações
+Camada View 
+    É a camada de interação com o usuário. Ela apenas faz a exibição dos dados, sendo ela por meio de um
+    HTML ou XML.
+Camada Controller 
+    É a camada responsável por receber todas as requisições e por controlar qual modelo usar e qual view 
+    será mostrado ao usuário.
+
+ASP .NET Web Forms 
+    No modelo ASP .NET web forms as requisições do navegador eram enviadas para páginas, que deveriam
+    existir fisicamente, com isso cada URL deveria ter uma página sífica que a represente.
+ASP .NET MVC 
+    As requisições do navegador são enviadas para uma Ação da Controller, tirando a necessidade de cada
+    URL possuir arquivo físico.
+Routes
+    Quando uma aplicação ASP .NET MVC é criada já é configurado um padrão de rota default:
+    EX:
+    url:"{controller}/{action}/{id}",
+    defaults: new { controller = "Home" , action = "Index" , id = UrlParameter.Optional}
+    Esse padrão já atende a maioria das necessidades, porém é possível criar padrões personalizados.
+Custom Routes 
+    Para determinadas necessidades podemos criar rotas personalizadas, isso permite uma maior flexibilidade
+    e que seja possível gerar URLs mais amigáveis para o usuário o que torna a aplicação mais acessível.
+    EX:
+    url:"student/{id}/{name}/{standardId}
+    defaults : new { controller = "Student" , actions = "Index" , id = UrlParameter.Optional ,
+    name = UrlParameter.Optional , standardId = UrlParameter.Optional},
+
+Exemplo 
+    Exemplo de uma URL utilizando a rota default:
+
+    http://localhost:1234/home/index/100 onde o home é o Contoller , o index é o Action Method e o 100 
+    id parameter value.
+
+Action Result
+    O Action Result é o resultado de uma Ação processada por uma controller, o action result possui
+    diversos tipos.
+
+HTTP verbs
+    Os HTTPs Verbs são métodos do protocolo HTTP que informam ao servidor qual ação ele deve executar.
+    GET: buscar recurso / Cache 
+    POST: criar um novo recurso 
+    PUT/PATCH: atualizar um recurso existente
+    DELETE: remove um recurso.
+
+Razor
+    É uma View Engine utulizada no ASP .NET MVC. O seu principal objetico é simplificar o desenvolvimento
+    de aplicações ASP .NET pois ele deixa o código mais simples , fácil e legível.
+    
+    Como benefícios principais temos:
+        -Menor curva de apredizagem, por ser baseado na linguagem C#.
+        -Por possuir uma sintaxe limpa ele requer que o desenvolvedor digite menos para chegar a um 
+        resultado
+        -O VisualStudio possui IntelliSense para páginas razor que nos dá uma maior produtividade.
+
+Middlewares
+    Middlewares são componentes (classes) que é executaod em todas as solicitaç~pes na aplicação
+    ASP.NET. Normalmente existem vários middlewares na aplicação e nós definimos a ordem em que são
+    executados. Cada Middleware adiciona ou modifica a solicitação http e pode passar o controle para 
+    o proximo middleware.
+
+Startups
+    Como o próprio nome diz, a classe Startup.cs é responsável por ser o ponto inicial do projeto.
+    Dentro dela existem métodos que são responsáveis por configurarem o projeto. são eles:
+        -ConfigureServices
+        -Configure
+
+    ConfigureServices
+        O métodos ConfigureServices é responsável por registrar as classes ao contêiner de injeção de 
+        dependência, após isso a classe poderá ser usada em qualquer lugar da aplicação desde que seja
+        incluída no construtor da classe em que deseja usar.
+    Configure  
+        Controla o pipeline da aplicação, é nesse método que são especificados os middlewares que serão
+        utilizados. Se nada for colocado nesse método nem o MVC funcionará pois não foi indicado a 
+        aplicação o que utilizar.
+        Deve ser adicionado apenas os middlewares que forem utilizados caso contrário poderá acontecer a 
+        perda de performace.

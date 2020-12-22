@@ -1,0 +1,13 @@
+Sobre
+    Uma forma mais intelifente de fazer implementações de campos em classes são as propriedades.
+    Propriedades consistem em um par de membros "get" e "set" que respectivamente servem para recuperar e
+    atribuir o valor a um campo.
+    Geralmente, para cada método existe uma variável dentro da classe que armazena o valor da propriedade.
+
+    São mensagens que a classe dispara em uma determinada situação. Para que esse método funcione, é 
+    necessário que um método seja escrito para ser executado quando ocorre o evento. A classe fica apenas
+    sabendo que existe esse método em tempo de execução.
+
+    Para que o mecanismo de eventos funcione, é necessário usar uma estrutura chamado Delegate, uma
+    variável que guarda o endereço de uma função. Assim, quando o evento é disparado, essa variável
+    chama a função associada a ela.

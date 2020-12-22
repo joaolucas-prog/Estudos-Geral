@@ -1,0 +1,39 @@
+Paradigmas de programação  
+
+    Paradigmas de programação são modos diferentes de montar a estrutura e execução de um código. Um 
+    paradigma de programação fornece e determina a visão que o programador possui sobre a estruturação e
+    execução do programa
+    Cada paradigma surgiude necessidades diferentes. Dado isso, cada um apresenta maiores vantagens sobre
+    os outros dentro do desenvolvimento de determinado sistema. Sendo assim, um paradigma pode oferecer
+    técnicas apropriadas para uma aplicação específica. Entre eles estão a programação orientada a objetos
+    (POO) e programação Estruturada (PE).
+
+Programação Estruturada.
+
+    A programação estruturada tem como principal caraterística sua interpretação linha por linha, em 
+    pequenos trechos de código , podendo eles não estar em uma ordem específica. Há três tipos de 
+    estruturas básicas para navegar pelo código: sequência, seleção e repetições
+    
+    sequências: são comandos a serem executados de cima para baixo, linha a linha, do programa, de forma
+    sequencial
+    
+    seleções: sequências que só devem ser executadas se uma  condição for satisfeita (exemplos: if-else,
+    switch e comandos parecidos).
+
+    repetições: são comandos sequências que devem ser executados repetidamente até uma condição for 
+    satisfeita (exemplos: for, while ,do-while, etc.)
+
+Programação Orientada a objetos
+
+    O POO é baseado no conceito de "objetos", que podem conter dados na forma de campos(atributos)
+    e códigos, na forma de procedimento( métodos). Uma caraterística é que um procedimento de objeto
+    pode acessar e geralmente modificar, os campos de dados do objeto com qual eles estão associados
+    e cada um receber processar e enviar dados, podendo ser visto como uma " máquina idependente".
+
+    Para que uma linguagem possa ser considerada orientada a objeto é preciso atender a quatro tópicos
+    bastante importantes, e esses tópicos é que são chamados de "Os 4 pilares da POO" são eles:
+    
+    -Abstração
+    -Encapsulamento
+    -Herança
+    -Polimorfismo

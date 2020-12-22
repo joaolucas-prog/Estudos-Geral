@@ -1,0 +1,53 @@
+Classes
+    Pode ser considerado como se fosse um molde para o objeto, contendo dentro de si as principais 
+    informações para sua criação. Define os atributos e métodos comuns que serão compartilhados por
+    um objeto.
+
+    exemplo de código
+
+public class Produto // Nome da classe 
+{
+    private int condigo;//atributos
+    private string nome;
+    private decimal preco;
+    
+    public int Codigo { get => codigo , set => codigo = value};//metodos
+    public string Nome { get => nome , set => nome = value};
+    public decimal Preco { get => preco , set => preco = value};
+}
+
+Objetos
+    Considera-se um  objeto tudo aquilo que em geral possui atributos, comportamentos e um estado. A 
+    classe em si é um conceito abstrato, como um molde, que se torna concreta e palpável atráves da 
+    criação de um objeto.
+
+    Na programação o objeto é uma instanciação de uma classe. Para criarmos ou "instanciarmos" Objetos
+    de uma determinada classe, utilizamos o operador new.
+    exemplo:
+        Produto obj = new Produdo();
+
+Visibilidade
+    A visibilidade é importante para a proteçãodo código e suas funcionalidades, define quem pode 
+    alterar cada dados dos trechos de código em três principais níveis:
+    
+    -Publica (+)
+    -Privada (-)
+    -Protegida (#)
+
+    De forma completa se encontramos os modificadores:
+
+    Public : 
+        sem limitação de acesso
+    protected internal :
+        Acesso ilimitado à própria classe, às classes derivadas as processo e ao próprio assembly.
+    protected:
+        Acesso limitado à propria classe , às classes derivadas.
+    internal:
+        Acesso limitado apenas ao assembly.
+    private:
+        Acesso limitado apenas à classe.
+
+    Esse encapsulamento de atributos e métodos impede o chamado vazamento de escopo, onde uma atributo
+    ou método é visível por alguém que não deveria vê-lo ,como outro objeto ou classe
+    
+        

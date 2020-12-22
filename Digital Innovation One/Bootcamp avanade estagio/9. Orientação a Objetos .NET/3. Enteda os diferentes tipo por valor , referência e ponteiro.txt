@@ -1,0 +1,57 @@
+Tipos por valor
+    O C# tem duas grantes categorias de tipos: por valor e por referência. Os tipos por valor são
+    gerenciados diretamente e têm as seguintes características principais:
+    
+    - Todos os tipos de dados que são númericos.Não precisam ser inicializados com o operador new, a 
+    variável armazena diretamente o valor.
+
+    -A atribuição de um variável de outra copia o conteúdo, criando efetivamente outra copia da variável,
+    não podem conter o valor null. Exemplos de variáveis desse tipo são: integers, doubles, float e char.
+
+Inteiros
+    Os tipos inteiros(Integers) têm sempre o mesmo significado,  independetemente da implementação.
+        byte  - 8 bits sem sinal ( 0 a 255)
+        sbyte - 8 bits com sinal ( -127 a 128)
+        ushort - 16 bits sem sinal ( 0 a 65535)
+        short - 16 bits com sinal ( -32768 a 32767)
+        uint - 32 bits sem sinal ( 0 a 4294967295)
+        nt - 32 bits com sinal ( -2147483648 a 2147483647)
+        ulong - 64 bits sem sinal ( 0 a 18446744073709551615)
+        long - 64 bits com sinal ( -9223372036854775808 a  -9223372036854775806)
+
+Double ou Float
+    Os número de pontos flutuantes são bastantes convencionais, as  operações de ponto flutuante não geram
+    erros.
+
+    double - ponto flutuante binário IEEE de 8 bytes, 15 digitos decimais de precisão
+    float - ponto flutuante binário LEEE de 4 bytes, 7 digitos de precisão.
+
+Caracteres
+    Em C#, tosos os caracteres(char) são armazenados no padrão Unicode e usam 16 bit por caractere. O
+    unicode permite armazenar os caracteres de todas as línguas vivas
+
+    char - unico caracter Unicode de 16bit
+
+Tipo por referência
+    Um tipo por referência armazena uma referência a seus dados. Os tipos de referência incluem o seguinte:
+    -Duas variáveis poderem conter a referência a um mesmo objeto, operações em uma variável pode afetar
+    a outra. Todas as matrizes, mesmo que seus elementos sejam de tipos de valor.Exemplo de tipo por
+    referência: strings, classes e arrays.
+
+strings
+    As strings são considerados imutáveis enão podem ser alterados depois de criadas. Quando você efetua
+    uma operação qualquer, como por exemplo, concatenar um caracter, você está na verdade criando outra
+    string e descartando a anterior.
+
+Classes
+    Como visto anteriormente é um tipo definido pelo usuário e corresponde auma class. As classes
+    são sempre derivadas de object e podem conter campos, métodos e propriedades. Uma classe pode derivar
+    de uma única outra classe , e também de várias outras interfaces.
+
+Array 
+    Um arrau(matriz) é uma lista de valores onde tosos os valores no grupo são referênciados pelo nome
+    da matriz e o índice atribuído ao valor específico na matriz.
+
+Tipo Ponteiro
+    um ponteiro ou apontador é um tipo de dado cujo valor se refere diretamente a um outro valor alocado
+    em outra área da memória, através do seu endereço.

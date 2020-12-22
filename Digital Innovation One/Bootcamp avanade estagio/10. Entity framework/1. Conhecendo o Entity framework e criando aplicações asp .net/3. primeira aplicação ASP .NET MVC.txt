@@ -1,0 +1,42 @@
+Cria projeto mvc no VS
+
+Na pasta modelo criar uma Class Categorias 
+
+Criar as propriedades id e descricao ambos com get e set
+
+Instalar as ferramentas sqlserver e tools
+
+Ferramentas > Gerenciador de pacotes Nulgets > Console
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+
+Criar class Context herdando DbContext
+
+depois sobrescrever o Método OnConfigure
+
+e criar uma tabela usando DbSet
+
+ficando :
+public class Context : DbContext
+    {
+        public DbSet<Categoria> Categorias { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Cursomvc;Integrated Security = True");
+        }
+    }
+
+após isso deve ir na classe Startup e ir no metodo ConfigureServices e  adicionar
+services.AddDbContext<Context>();
+
+depois ir no console novamente e digitar
+Add-Migration InicialCreate
+
+e depois
+Update-Database
+
+com a categoria e contexto criando podemos criar no controller um novo item com scafolld
+utilizando o controlador mvc usando entity Framework
+
+após isso você cria um novo item na lista da classe layout passando Categoria e Index nos parametros

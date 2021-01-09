@@ -1,0 +1,16 @@
+Comando insert :
+	insert into nome_tabela (parametros) values ( valores)
+Comando update :
+	update nome_tabela set (coluna)=(novo valor) where (condição)
+Comando delete :
+	delete from nome_tabela where (condição)
+Comando select :
+	select (parametros) from nome_tabela where (condição)
+
+ordenando consulta
+	order by nome_coluna desc( decrescente)
+	order by nome_coluna asc( crescente)
+	ex: select * exemplo order by nome;
+Operador Or:
+	serve para fazer uma busca com 1 ou mais condições
+	ex: select * from exemplo where nome = 'joao' or nome = 'ingrid' or idade = 10

@@ -1,0 +1,10 @@
+Para criar um projeto web , você cria um projeto maven , seleciona o archetype webapp
+em seguida adiciona o plugin para rodar a aplicação na web (tomcar,jetty ,jboos)
+executa o goals ex: mvn tomcat7:run e pronto , seu primeiro hello world em aplicação javaweb.
+
+Adicionando api servlet
+adicione nas dependencias do projeto um servlet.
+em seguida pesquise no google um exemplo de arquivo web.xml da versão do seu servlet
+
+você pode configurar seu plugin para fazer aplicações mais rapidas, como mudar contexto , atualizar
+automaticamente , etc

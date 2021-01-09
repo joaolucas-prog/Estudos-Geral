@@ -1,0 +1,12 @@
+create tabele nome_tabela(
+    (parametros),
+    foreign key (parametro cujo valor é uma chave estrangeira) references tabela_estrangeira(coluna)
+)
+
+consulta com relacionamento
+    select * from tabela1 inner join tabela2 on (condição de união)
+    where (condicao)
+
+Apelisdos
+    para dar um apelido a uma consulta utiliza-se a palavra chave 'as'
+    e=-09-;. 

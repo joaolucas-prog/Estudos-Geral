@@ -1,0 +1,17 @@
+Instalando Maven:
+    entrar no site do projeto maven https://maven.apache.org/
+    na aba de download baixar o zip caso utilize windowns ou tar caso use MAC
+    extrair conteúdo do zip e colocar no c: e colocar na variável de sistema
+
+Criando um projeto novo:
+    mvn achertype:generate -DartifacrIs=nomeprojeto -DgroupId=pacote.projeto.maven 
+    -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-quickstart
+
+	-interactiveMode=False deixa tudo no padrão 
+	-archetypeArtifactId é um projeto de exemplo , se procurar essa palavra no google existe
+	váriosprojetos de exemplo , pesquisar archetypeArtifactId hibernate , archetypeArtifactId
+	spring mvc, ....
+    
+    mvn compile (compila o projeto)
+    mvn test(testa o projeto)
+    mvn clean ( limpa o projeto)

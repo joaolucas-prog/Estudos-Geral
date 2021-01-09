@@ -1,0 +1,9 @@
+sempre que digitar mvn comando ex mvn test o maven vai tentar baixar a ultima versão do pacote,caso
+não esteja especificado, e irá demorar para rodar sempre, para isso devemos rodar ele offline com o cmd
+    $mvn -o comando
+O maven possui um repositorio remoto em que ele guarda todos os jars do projeto e não precisa baixalos
+novamente, você pode criar um reposiório e colocá-lo no pom <repositories></repositories>
+
+documentação pom
+Pom refecenres
+https://maven.apache.org/pom.html

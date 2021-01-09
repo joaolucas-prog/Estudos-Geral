@@ -1,0 +1,7 @@
+Como procurar um plugin para uma tarefa que você precisa
+
+pesquise no google
+maven java test coverage plugin (cobertura de test)
+
+sempre deixe a versão expecificada , pois caso contrário o mvn pode baixar uma nova versão e quebrar
+seu programa

@@ -1,0 +1,12 @@
+Como compilar os arquivos java manualmente em um projeto com diretórios diferentes:
+    $ javac -sourcepath src -d target src/programa.java
+Padrão
+"$ javac -sourcepath (diretorio fonte) -d (diretorio alvo) diretorio_fonte/programa.java"
+
+Utilizando bibliotecas
+"$ javac -sourcepath (diretorio fonte) -d (diretorio alvo) -cp (caminho arquivo jar da biblioteca) 
+diretorio_fonte/programa.java"
+
+Pela linha de comando vai ficando cada vez mais inviável, imagine que eu tenho classes de testes
+então os diretórios iriam aumenar, teria que separar os arquivos testes compilados para não entregar
+pro cliente e a linha de comando cresce cada vez mais.  

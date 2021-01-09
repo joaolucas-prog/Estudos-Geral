@@ -1,0 +1,76 @@
+create table nome_tabela(
+(parametros)
+)
+tipos de parametro
+serial (auto incremento)//cria uma tabela por de baixo dos panos com uma sequência que incrementa auto.
+varchar (sequencia de caracteres)
+integer ( valor numérico 4 bytes)
+primary key ( chave primária)
+not null ( parametro não pode ser nulo)
+default (valor padrão do parametro)
+
+Os tipos de dados númericos inteiros são :
+
+Tipo | Tamanho | Faixa
+
+smallint | 2 bytes | -32768 to +32767
+
+integer | 4 bytes | -2147483648 to +2147483647
+
+bigint | 8 bytes |-9223372036854775808 to 9223372036854775807
+
+
+Os tipos de dados números fracionários são:
+
+Tipo | Tamanho | Faixa
+
+decimal | variable | no limit
+
+numeric | variable | no limit
+
+real | 4 bytes | 6 decimal digits precision
+
+double precision | 8 bytes | 15 decimal digits precision
+
+ 
+
+Os tipos de dados caracteres são:
+
+Tipo | Descrição
+
+caracter varying(n) | comprimento variável com limite
+
+varchar(n) | comprimento variável com limite
+
+character(n) | comprimento fixo, completado com bracos
+
+char(n) | comprimento fixo, completado com bracos
+
+text | comprimento variável não limitado
+
+
+Os tipo de dados data e hora são:
+
+Tipo | Descrição
+
+Timestamp without Time Zone | tanto data quanto hora
+
+Timestamp with Time Zone | tanto data quanto hora
+
+Interval | intervalos de tempo
+
+Date | somente datas
+
+Time without Time Zone | somente a hora do dia
+
+Time with Time Zone | somente a hora do dia
+
+
+Os valores literais válidos para verdadeiro é:
+
+‘t’, ‘true’, ‘y’, ‘yes’, ‘1’
+
+Os valores literais válidos para falso é:
+
+‘f’, ‘false’, ‘n’, ‘no’, ‘0’
+

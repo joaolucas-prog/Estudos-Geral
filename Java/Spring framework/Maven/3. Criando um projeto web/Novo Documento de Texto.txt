@@ -1,0 +1,34 @@
+Utilizando package no projeto:
+
+se você utilizar o comando mvn package, ou um build no eclipse package ele irá gerar seus arquivos
+sejam ele war ou jar onde ele guardará todas as suas dependências para rodar uma aplicação web
+
+adicionando dependencias externas no seu repositório local
+vá para o projeto em que você quer exportar e build o comando mvn install
+com isso ele irá instalar o arquivo .jar e o pom.xml deste arquivo na sua maquina local
+Após isso você pode escrever sua denpendencia normalmente no projeto destino 
+<dependency>
+<groupId>seu.pacote</groupId>
+  <artifactId>nome.projeto</artifactId>
+  <version>versão.projeto</version>
+</dependency>
+
+Tomando alguns cuidados
+quando você estiver adicionando uma dependencia externa no seu projeto , tome cuidado pois o eclipse
+ele é esperto, e caso o mesmo esteja aberto ele irá linkar ao projeto e não ao arquivo jar, podendo
+assim você ter acesso a classes que não eram para ter ex: classes de teste, para isso  instale o
+jar localmente, remova o projeto para não da conflito , em seguida atualize o pom.xml só para
+rebuildar e pronto. Evitando assim conflitos 
+
+Tipos de scopo
+compile - compila e roda
+test - será usando apenas no test
+provided - compila mas não roda
+runtime - só roda não compila
+
+exluir dependencia 
+<exclusions>
+<exclusion>dependencia
+</exclusion>
+</exclusions>
+<

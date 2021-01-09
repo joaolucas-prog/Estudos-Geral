@@ -1,0 +1,9 @@
+podemos fazer operações aritimeticas nas consultas sql
+    ex: select descricao , qtd , valor , (qtd(operador)valor) as total from produto
+	esse operador pode ser : +, - , / , *
+
+função SUM 
+	executa um somatorio do parametro passado, caso seja valores de uma coluna precisa agrupar
+	ex: select produto, SUM(valor)
+	    from tabela
+	    group by produto

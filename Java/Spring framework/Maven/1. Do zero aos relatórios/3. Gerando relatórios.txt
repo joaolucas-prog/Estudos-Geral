@@ -1,0 +1,18 @@
+Para gerar um relatório precisamos digitar
+    $mvn surefire-report:report
+
+surefire-report:report (significa utilizar um plug-in chamado surefire-report com objetivo de report)
+o clean, compile , test não precisa pois já vem por padrão no maven 
+
+como descobrir plug-ins pesquisar no google : maven plug-in, caso queira algo especifico maven plug-in
+expecificação)
+procurar também no GUJ
+
+mvn package
+empacota o projeto
+
+executando o jar
+
+java -cp nome-jar.jar nomeclasse
+
+ex: $java -cp target/Exemplo.jar br.com.ingrao.maven.Exemplo

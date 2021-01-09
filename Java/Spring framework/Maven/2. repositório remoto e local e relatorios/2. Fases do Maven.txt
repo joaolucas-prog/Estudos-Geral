@@ -1,0 +1,18 @@
+o maven irá sempre rodar as fases até onde você pediu seguindo essa ordem
+
+validate : valida todos os seus arquivos, verifica  se você tem todos os arquivos que precisa,
+se o ambiemte está configurado certo, etc
+
+compile : compila os arquivos, sejam normais , testes , ...
+
+test : roda os testes que você tem
+
+package : gera jar , war . Os arquivos que você vai usar para deploy
+
+integration-test : roda outra fase de teste de integração.
+
+verify : verifica se o resultado dos teste passa no controle de validade.
+
+install: instala no local
+
+deploy: deploy no remoto

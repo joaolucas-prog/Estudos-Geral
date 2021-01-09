@@ -1,0 +1,13 @@
+Você deve ter as ferramentas instaladas na sua maquina
+Java
+Eclipse for JavaEE Development ( ou IDE de preferência)
+Tomcat
+Depois configure seu eclipse para reconhecer o tomcat
+Para isso coloque ele na perspectiva JavaEE
+clique na aba Server , depois na pasta apache e escolha a versão do tomcat que irá utilizar
+depois configure indicando a pasta onde o tomcat está instalado
+
+Após isso crie seu projeto dynamico web pelo eclipse e marque a opção para criar um web.xml 
+dicione dentro do tomcat,
+para isso clique com botão direito do mouse no tomcat na aba serve e depois add/remove, adicionado o
+seu projeto. pronto criou seu primeiro projeto 

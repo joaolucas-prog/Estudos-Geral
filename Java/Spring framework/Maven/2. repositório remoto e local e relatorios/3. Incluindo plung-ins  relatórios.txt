@@ -1,0 +1,34 @@
+existem vários tipos de relatórios alguns exemplos
+
+Maven pmd
+é um relatório que analisa o condigo fonte e detecta possível margens de bug no código
+comando mvn pmd:pmd
+	mvn pmd:check
+
+para fazer ele sempre rodar durante o build você vai na parte de uso(usage) do seu plug-in e procura
+um exemplo de uso na fase de build , com isso você copia e cola na tag
+<build>
+  <plugins>
+    <plugin>
+      cole aqui
+    </plugin>
+  </plugins>
+</build>
+
+não basta apenas colar no build para fazer o plugin rodar, precisamos especificar quando ele será
+executado  
+<build>
+  <plugins>
+    <plugin>
+      plugin artifact
+      <executions>
+	<execution>
+	  <phase>em qual fase irá executar ex : verify</phase>
+	  <goals>
+	    <goal>comando a ser executado ex :check caso esteja usando pmd</goal>
+	  </goals
+	</execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>

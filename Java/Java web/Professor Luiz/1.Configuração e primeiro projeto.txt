@@ -1,0 +1,48 @@
+Para consegui criar seu primeiro projeto você deve ter as seguintes ferramentas instaladas na sua máquina
+1 - Java 1.8+
+2 - Eclipse IDE JavaEE (ou outra de sua escolha)
+3 - Tomcat 7+
+
+Abra o eclipse e crie um novo projeto maven
+marque a opção create a simple project depois next
+escolha um groupId e um ArtifactId
+selecione o packging como war e finish
+
+com o projeto criado vamos configurar o pom.xml
+
+Adicione as tags :
+<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+	<dependencies>
+		<dependency>
+		<groupId>org.glassfish</groupId>
+		<artifactId>javax.faces</artifactId>
+		<version>2.2.10</version>
+		</dependency>
+	</dependencies>
+<build>
+	<finalName>${project.artifactId}</finalName>
+	<plugins>
+		<plugin>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.1</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
+Em que configuramos o maven para compular no java 8 , com enconding utf-8 e com a dependencia do 
+JSF. 
+Em seguida clique com o botão direito no seu projeto>properties>Project Facets e configure o java para
+1.8 marque a opção JavaServer Faces e configure ela , alterando o /faces/* para *.xhtml
+
+Em seguida vá em  Window>Preferences> escreva encoding no campo de texto e marque a opção utf-8
+em todas as áreas que foram filtradas.
+
+Clique com o botão direito no projeto>Maven>update project
+
+e pronto projeto criado e configurado.

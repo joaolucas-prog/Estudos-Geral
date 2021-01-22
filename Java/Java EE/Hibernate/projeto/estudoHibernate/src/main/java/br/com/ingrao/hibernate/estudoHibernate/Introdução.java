@@ -9,8 +9,8 @@ import org.hibernate.cfg.Configuration;
 import br.com.ingrao.hibernate.model.bean.Empresa;
 import br.com.ingrao.hibernate.model.bean.Endereco;
 
-public class Introdução {
-	//Antes de tudo você deve configurar o arquivo xml
+public class IntroduÃ§Ã£o {
+	//Antes de tudo vocï¿½ deve configurar o arquivo xml
 	/*
 	 *EXEMPLO
 	 * 
@@ -33,10 +33,10 @@ public class Introdução {
 		</session-factory>
 	</hibernate-configuration>
 	
-	Em seguida crie uma clase de entidade em que o hibernate irá persistir seus dados em um banco
+	Em seguida crie uma clase de entidade em que o hibernate irï¿½ persistir seus dados em um banco
 	*/
 	public static void main(String[] args) {
-		//Criando uma fabrica de coneção e uma sessao 
+		//Criando uma fabrica de coneï¿½ï¿½o e uma sessao 
 		SessionFactory sessionFactory = new Configuration()
 				.configure(new File("src/main/resources/META-INF/hibernate.cfg.xml"))
 				.buildSessionFactory(); 

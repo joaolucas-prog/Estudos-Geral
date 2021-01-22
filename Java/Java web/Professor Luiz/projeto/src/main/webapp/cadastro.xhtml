@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<!-- aqui estamos importando o jsf html e core pro projeto com o xmlns:h e xmlns:f -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Cadastro</title>
+	</h:head>
+	<h:body>
+		<h1>Cadastro funcionário</h1>
+		<!-- formulário -->
+		<h:form>
+			<h:panelGrid><!-- uma grid para os campos do formulário-->
+			Nome <h:inputText/><!-- caixa de texto -->
+			Senha<h:inputSecret/><!-- caixa de texto com conteúdo secreto -->
+			Sexo
+			<h:selectOneMenu><!-- menu de seleção -->
+				<f:selectItem intemLabel="Masculino" itemValue="M"/><!-- itens do menu de seleção -->
+				<f:selectItem intemLabel="Feminino" itemValue="F"/>
+			</h:selectOneMenu>
+			Status
+			<h:selectOneRadio><!-- campo de marcação -->
+				<f:selectItem intemLabel="Ativo" itemValue="A"/><!-- itens do campo de marcação -->
+				<f:selectItem intemLabel="Inativo" itemValue="I"/>
+			</h:selectOneRadio>
+			Observações<h:inputTextarea rows="3" cols="20"/><!-- caixa de texto -->
+			<h:commandButton value="Cadastrar"/><!-- botão para enviar formulário -->
+			</h:panelGrid>
+		</h:form>
+	</h:body>
+</html>

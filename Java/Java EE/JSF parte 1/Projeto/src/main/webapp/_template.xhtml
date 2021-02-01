@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<ui:insert name="head">
+	</ui:insert>
+</h:head>
+
+<h:body>
+
+	<div id="header">
+		<h:graphicImage library="img" name="logo.png" style="width:200px;"/>
+		<h:form rendered="#{usuarioLogado != null}">
+			<h:commandLink  value = "Logout" action="#{usuarioMB.deslogar}" ></h:commandLink>
+		</h:form>
+		<ui:insert name="header">
+
+		</ui:insert>
+	</div>
+
+
+	<div id="content">
+		<ui:insert name="content">
+
+		</ui:insert>
+	</div>
+
+	<div id="footer">
+	
+		<ui:insert name="footer">
+
+		</ui:insert>
+	</div>
+
+</h:body>
+
+</html>

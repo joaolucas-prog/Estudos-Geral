@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<ui:insert name="head">
+		
+	</ui:insert>
+</h:head>
+
+<h:body>
+
+	<div id="header">
+			<h:graphicImage library="img" name="logo.png" style="width:200px;" />
+			<h:form style="position:absolute;right:10px;">
+				<p:themeSwitcher id="basic" style="width:165px;"
+					value="#{temaMB.tema}">
+					<f:selectItems value="#{temaMB.temas}" var="tema" itemLabel="#{tema}" itemValue="#{tema}"/>
+					<f:ajax />
+				</p:themeSwitcher>
+			</h:form>
+
+		<p:growl id="mensagens" showDetail="true">
+			<p:autoUpdate />
+		</p:growl>
+		<h:form rendered="#{usuarioLogado != null}">
+			<p:menuButton value="Menu">
+				<p:menuitem value="Livros" action="livro?faces-redirect=true" />
+				<p:menuitem value="Autores" action="autor?faces-redirect=true" />
+				<p:menuitem value="Vendas" action="vendas?faces-redirect=true" />
+				<p:separator />
+				<p:menuitem value="Logout" action="#{usuarioMB.deslogar}" />
+			</p:menuButton>
+		</h:form>
+		<ui:insert name="header">
+
+		</ui:insert>
+	</div>
+
+
+	<div id="content">
+		<ui:insert name="content">
+
+		</ui:insert>
+	</div>
+
+	<div id="footer">
+
+		<ui:insert name="footer">
+
+		</ui:insert>
+	</div>
+
+</h:body>
+
+</html>

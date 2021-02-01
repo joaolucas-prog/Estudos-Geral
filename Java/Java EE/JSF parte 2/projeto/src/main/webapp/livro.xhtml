@@ -1,0 +1,91 @@
+
+<ui:composition template="/_template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="head">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Livro</title>
+	</ui:define>
+	<ui:define name="header">
+		<h1>Novo Livro</h1>
+	</ui:define>
+	<ui:define name="content">
+		<h:form id="formCadastroLivro">
+			<p:messages id="messages" />
+			<p:fieldset legend="Dados do Livro">
+				<h:panelGrid columns="2">
+					<p:outputLabel value="Titulo :" for="titulo" />
+					<p:inputText id="titulo" value="#{livroMB.livro.titulo}"
+						required="true" requiredMessage="Titulo obrigatório">
+						<f:validateLength maximum="40" />
+						<f:ajax event="blur" render="messages" />
+					</p:inputText>
+					<p:outputLabel value="ISBN :" for="isbn" />
+					<p:inputMask id="isbn" value="#{livroMB.livro.isbn}"
+						mask="999-9-99-999999-9" validator="#{livroMB.comecaComDigitoUM}" />
+					<p:outputLabel value="Preço :" for="preco" />
+					<p:inputNumber id="preco" value="#{livroMB.livro.preco}"
+						symbol="R$ " decimalSeparator="," thousandSeparator="." />
+					<p:outputLabel value="Data de lançamento :" for="dataLancamento" />
+					<p:datePicker id="dataLancamento"
+						value="#{livroMB.livro.data.time}" pattern="dd/MM/yyyy"
+						timeZone="America/Sao_Paulo" />
+				</h:panelGrid>
+			</p:fieldset>
+			<p:fieldset legend="Dados do Autor">
+				<p:panelGrid columns="4">
+					<p:outputLabel value="Selecione o autor:" for="autor" />
+					<p:selectOneMenu value="#{livroMB.id}" id="autor">
+						<f:selectItems value="#{livroMB.autores}" var="autor"
+							itemLabel="#{autor.nome}" itemValue="#{autor.id}" />
+					</p:selectOneMenu>
+					<p:commandButton value="Gravar Autor"
+						action="#{livroMB.gravarAutor}" update="tabelaAutores"
+						process="@this autor" />
+					<p:commandLink value="Cadastrar novo Autor"
+						action="#{livroMB.formAutor}" immediate="true" update="@all" />
+				</p:panelGrid>
+				<p:dataTable value="#{livroMB.autoresDoLivro}" var="autor"
+					emptyMessage="Nenhum autor gravado" id="tabelaAutores">
+					<p:column>
+						<p:outputLabel value="#{autor.nome}" />
+					</p:column>
+					<p:column>
+						<p:commandLink value="X" update="tabelaAutores" process="@this"
+							action="#{livroMB.removeAutorDoLivro(autor)}" />
+					</p:column>
+				</p:dataTable>
+			</p:fieldset>
+			<p:commandButton value="Gravar" action="#{livroMB.gravar}"
+				process="@form" update="@form :formListaLivros" />
+		</h:form>
+		<h:form id="formListaLivros">
+			<p:dataTable value="#{livroMB.livros}" var="livro" id="listaLivros" rows="5" paginator="true"
+			>
+				<p:column headerText="Titulo" sortBy="#{livro.titulo}" filterBy="#{livro.titulo}">
+					<p:outputLabel value="#{livro.titulo}" />
+				</p:column>
+				<p:column headerText="ISBN" sortBy="#{livro.isbn}">
+					<p:outputLabel value="#{livro.isbn}" />
+				</p:column>
+				<p:column headerText="Preço">
+					<p:outputLabel value="#{livro.preco}" />
+				</p:column>
+				<p:column headerText="Alterar">
+					<p:commandLink value="altera" action="#{livroMB.altera(livro)}"
+						process="@form"
+						update="@form :formCadastroLivro" />
+
+				</p:column>
+				<p:column headerText="Remover" >
+					<p:commandLink value="Remover" action="#{livroMB.remover(livro)}"
+						process="@form" update="@form" />
+
+				</p:column>
+			</p:dataTable>
+		</h:form>
+	</ui:define>
+</ui:composition>

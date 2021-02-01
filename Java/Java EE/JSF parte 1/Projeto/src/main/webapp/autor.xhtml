@@ -1,0 +1,41 @@
+<ui:composition template="/_template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	<ui:define name="head">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Autor</title>
+	</ui:define>
+	<ui:define name="content">
+		<h:messages globalOnly="true"/>
+		<f:metadata>
+			<f:viewParam name="autorId" value="#{autorMB.autorId}"/>
+			<f:viewAction action="#{autorMB.carregaAutorPorId}"/>
+		</f:metadata>
+		<h:form id="formAutor">
+			<h:outputText value="Nome: " for="autor" />
+			<h:inputText id="autor" value="#{autorMB.autor.nome}" required="true">
+				<f:validateLength minimum="5" />
+			</h:inputText>
+			<h:commandButton value="Cadastrar" action="#{autorMB.cadastrar}" />
+		</h:form>
+		<h:form id="formAutores">
+			<h:dataTable value="#{autorMB.autores}" var="autor">
+				<h:column>
+					<f:facet name="header">Nome</f:facet>
+					<h:outputText value ="#{autor.nome}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Alterar</f:facet>
+					<h:commandLink value = "altera" action="#{autorMB.altera(autor)}"/>
+				</h:column>
+				<h:column>
+					<f:facet name="header">Remover</f:facet>
+					<h:commandLink value ="remove" action="#{autorMB.remove(autor)}"/>
+				</h:column>
+			</h:dataTable>
+		</h:form>
+	</ui:define>
+
+</ui:composition>

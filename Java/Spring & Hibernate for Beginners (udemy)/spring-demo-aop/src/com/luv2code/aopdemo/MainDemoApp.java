@@ -16,11 +16,15 @@ public class MainDemoApp {
 		//get the bean from spring container
 		AccountDAO theAccount = context.getBean("accountDAO",AccountDAO.class);
 		FooBarDAO theAccount2 = context.getBean("fooBarDAO",FooBarDAO.class);
+
 		
+		Account account = new Account();
 		//call the business method
-		theAccount.addAccount();
+		theAccount.addAccount(account, true);	
+		theAccount.doWork();
 		
 		theAccount2.addAccount();
+		theAccount2.goToSleep();
 		//close the context
 		context.close();
 	}

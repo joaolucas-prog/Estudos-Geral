@@ -1,8 +1,5 @@
 package com.luv2code.springdemo;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -18,11 +15,11 @@ public class TennisCoach implements Coach {
 		System.out.println(">> TennisCoach: inside the constructor method");
 	}
 	 
-	@PostConstruct
+	//@PostConstruct
 	public void startUp() {
 		System.out.println("startUp method");
 	}
-	@PreDestroy
+	//@PreDestroy
 	public void cleanUp() {
 		System.out.println("cleanUP method");
 	}

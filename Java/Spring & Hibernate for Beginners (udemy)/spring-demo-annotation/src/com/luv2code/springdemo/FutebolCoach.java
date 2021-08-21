@@ -7,8 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -27,7 +25,7 @@ public class FutebolCoach implements Coach {
 		System.out.println(">> FutebolCoach: inside the constructor method");
 	}
 	
-	@PostConstruct
+	//@PostConstruct
 	public void startUp() {
 		System.out.println("postcontruct");
 		list = new ArrayList<>();

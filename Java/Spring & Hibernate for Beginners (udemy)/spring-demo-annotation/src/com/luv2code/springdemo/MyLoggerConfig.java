@@ -4,9 +4,7 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
- 
-import javax.annotation.PostConstruct;
- 
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +20,7 @@ public class MyLoggerConfig {
 	@Value("${printed.logger.level}")
 	private String printedLoggerLevel;
 	
-	@PostConstruct
+	//@PostConstruct
 	public void initLogger() {
  
 		// parse levels

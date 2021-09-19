@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+.top-container {
+  background-color: #D4ECDD;
+}
+.middle-container {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.bottom-container {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}

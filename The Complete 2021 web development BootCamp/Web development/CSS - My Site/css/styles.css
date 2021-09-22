@@ -1,9 +1,29 @@
 * {
   margin: 0;
 }
+body {
+  text-align: center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
 .top-container {
   background-color: #D4ECDD;
+  padding-top: 100px;
+  position: relative;
 }
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+}
+
 .middle-container {
   width: 200px;
   height: 200px;

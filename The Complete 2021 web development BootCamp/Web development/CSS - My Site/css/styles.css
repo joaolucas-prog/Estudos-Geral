@@ -1,13 +1,11 @@
-* {
-  margin: 0;
-}
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 .top-container {
-  background-color: #D4ECDD;
+  background-color: #EAF6F6;
   line-height: 2;
   padding-top: 100px;
   position: relative;
@@ -21,12 +19,24 @@ h1 {
 h2 {
   color: #66BFBF;
   font-size: 2.5rem;
-}
-.h2-top {
   font-weight: normal;
 }
+
 h3, a {
   color: #11999E;
+}
+
+p {
+  line-height: 2;
+  color: #40514E;
+}
+
+hr {
+  color: #EAF6F6;
+  width: 5%;
+  margin: 80px auto 80px auto;
+  border: none;
+  border-top: 7px dotted;
 }
 .top-cloud {
   position: absolute;
@@ -39,9 +49,18 @@ h3, a {
   left: 300px;
   position: absolute;
 }
-
 .middle-container {
- 
+  margin: 50px auto 50px;
+  
+}
+.profile {
+  width: 30%;
+  margin: 0 auto 0;
+}
+
+.img-profile {
+  width: 45%;
+  border-radius: 100%;
 }
 .skill-row {
   width: 50%;
@@ -60,6 +79,51 @@ h3, a {
   margin-left: 30px;
   width: 25%;
 }
+
+.contact-me {
+  width: 40%;
+  margin: 0 auto 0;
+}
+
+.button {
+  background: #11999E;
+  background-image: -webkit-linear-gradient(top, #11999E, #105356);
+  background-image: -moz-linear-gradient(top, #11999E, #105356);
+  background-image: -ms-linear-gradient(top, #11999E, #105356);
+  background-image: -o-linear-gradient(top, #11999E, #105356);
+  background-image: -webkit-gradient(to bottom, #11999E, #105356);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: Arial;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background: #11999E;
+  border: solid #66BFBB 1px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
 .bottom-container {
- 
+  background-color: #66BFBF;
+  padding: 50px;
+}
+
+.footer-link {
+  padding: 1.2rem;
+  text-decoration: none;
+}
+.copyright {
+  color: #EAF6F6;
+  margin: 2rem 0 0;
+  font-size: 0.7rem;
 }

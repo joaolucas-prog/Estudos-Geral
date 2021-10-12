@@ -10,7 +10,7 @@ h2 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 6.25rem;
 }
 
 #title {
@@ -46,12 +46,17 @@ h2 {
 }
 
 .tindog-img {
-  transform: rotate(25deg);
   width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
@@ -101,4 +106,57 @@ h2 {
 .press-image {
   width: 15%;
   margin: 1.25rem 1.25rem 4.1rem;
+}
+
+#pricing {
+  text-align: center;
+  padding: 6.25rem;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+#cta {
+  background-color: #ff4c68;
+  font-family: 'Montserrat';
+  text-align: center;
+  color: #fff;
+  padding: 10% 15% 5%;
+}
+
+#cta h3 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.img-button {
+  margin-right: .5rem;
+}
+
+.custom-download {
+  margin: 7% 1.7%;
+}
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+#footer p {
+  color: #8f8f8f;
+}
+.footer-icon {
+  margin: 3% 1%;
+}
+
+@media (max-width: 1092px) {
+  .tindog-img {
+    transform: rotate(0);
+    position: static;
+  }
+  #title {
+    text-align: center;
+  }
 }
